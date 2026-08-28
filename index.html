@@ -43,14 +43,11 @@
                 </div>
                 <span class="font-bold text-base md:text-lg text-slate-800 tracking-wide">CFS Analytics</span>
             </div>
-            <span class="text-[11px] px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange font-semibold tracking-wider">
-                SYSTEM SHOWCASE
-            </span>
         </div>
     </nav>
 
-    <!-- 1. Hero Banner (主視覺與核心數據) -->
-    <header class="relative pt-16 pb-16 text-center border-b border-warm-border bg-gradient-to-b from-white via-warm-bg to-warm-bg px-6">
+    <!-- 1. Hero Banner (主視覺，已移除三個數據卡片) -->
+    <header class="relative pt-16 pb-12 text-center border-b border-warm-border bg-gradient-to-b from-white via-warm-bg to-warm-bg px-6">
         <div class="max-w-4xl mx-auto">
             <!-- 頂部標籤 -->
             <div class="inline-flex items-center gap-2 px-3.5 py-1 text-xs font-semibold text-brand-orange bg-brand-orange/10 border border-brand-orange/20 rounded-full mb-6">
@@ -60,29 +57,13 @@
             
             <!-- 大標題 -->
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-5 leading-tight">
-                CFS 智慧選品系統<br>
-                <span class="text-brand-orange">用資料力幫品牌找爆款</span>
+                DP CFS 選品系統<br>
+                <span class="text-brand-orange">透過數據資料找尋熱銷品</span>
             </h1>
             
-            <p class="text-sm md:text-base text-warm-subtext max-w-2xl mx-auto mb-10 leading-relaxed">
-                擺脫人工 Excel 盲目篩選！整合 Python 自動化診斷、RapidFuzz 智慧去重與 1.5x 缺口演算，自動精準補足熱銷品項。
+            <p class="text-sm md:text-base text-warm-subtext max-w-2xl mx-auto leading-relaxed">
+                整合 Python 自動化診斷、RapidFuzz 智慧去重與 1.5x 缺口演算，自動精準補足熱銷品項。
             </p>
-
-            <!-- 核心指標數據卡片 -->
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                <div class="p-5 bg-white rounded-xl border border-warm-border shadow-sm text-center hover:border-brand-orange/40 hover:shadow-md transition">
-                    <div class="text-3xl font-black text-brand-orange">100%</div>
-                    <div class="text-xs text-warm-subtext mt-1 font-medium">品牌健康度自動診斷</div>
-                </div>
-                <div class="p-5 bg-white rounded-xl border border-warm-border shadow-sm text-center hover:border-brand-orange/40 hover:shadow-md transition">
-                    <div class="text-3xl font-black text-brand-emerald">0%</div>
-                    <div class="text-xs text-warm-subtext mt-1 font-medium">同款異名爆款重複率</div>
-                </div>
-                <div class="p-5 bg-white rounded-xl border border-warm-border shadow-sm text-center col-span-2 md:col-span-1 hover:border-brand-orange/40 hover:shadow-md transition">
-                    <div class="text-3xl font-black text-brand-amber">1.5x</div>
-                    <div class="text-xs text-warm-subtext mt-1 font-medium">動態補品缺口精算</div>
-                </div>
-            </div>
         </div>
     </header>
 
@@ -90,7 +71,7 @@
     <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border">
         <div class="text-center mb-12">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Core Solutions</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">智慧演算，解決四大選品痛點</h3>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">四大選品方向</h3>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
@@ -100,7 +81,7 @@
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">1.5x 補品缺口演算</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    自動比對歷史爆款量與當月已提報量，精算「建議至少提報」與「需增加品項數」，拒絕盲目提報。
+                    自動比對歷史爆款量與當月已提報量，精算「建議至少提報」與「需增加品項數」。
                 </p>
             </div>
 
@@ -110,7 +91,7 @@
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">季節與價格帶動態過濾</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    智慧辨識當前月份，精準過濾掉非當季錯置資源，確保檔期營收最大化。
+                    辨識當前月份，精準過濾掉非當季錯置資源，確保檔期營收最大化。
                 </p>
             </div>
 
@@ -120,7 +101,7 @@
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">RapidFuzz 同款異名智慧去重</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    利用文字模糊比對演算法，精準比對當月新品同類，自動排除同款異名重複提報之品項。
+                    利用文字模糊比對演算法，比對當月新品同類，自動排除同款異名重複提報之品項。
                 </p>
             </div>
 
@@ -130,18 +111,18 @@
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">業務導向動態建議生成</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    自動判讀近 3 月排名與歷史 GMV 峰值，自動帶出「🔥 強烈建議」與完整「原因與建議」說服文案。
+                    自動判讀近 3 月排名與歷史 GMV 峰值，自動帶出「🔥 強烈建議/✅ 建議加入/🟠 考慮加入」與完整「原因與建議」說服文案。
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 📍 新增：3 步驟快速導入 (Quick Onboarding Steps) -->
+    <!-- 3 步驟快速導入 -->
     <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border">
         <div class="text-center mb-12">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Quick Onboarding</h2>
             <h3 class="text-2xl md:text-3xl font-bold text-slate-800">簡單 3 步驟，快速導入智慧選品</h3>
-            <p class="text-xs text-warm-subtext mt-2">只需幾分鐘，即可完成自動化診斷與決策清單產出</p>
+            <p class="text-xs text-warm-subtext mt-2">只需幾分鐘，即可完成自動化診斷與建議清單產出</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 relative">
@@ -155,7 +136,7 @@
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">匯入歷史數據與提報表</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    載入品牌歷史 Sales 數據與當月廠商提報之品項清單（支援標準 Excel / Google Sheets）。
+                    載入歷史DP CFS GMV數據與當月廠商提報之品項清單（支援標準 Excel / Google Sheets）。
                 </p>
             </div>
 
@@ -169,7 +150,7 @@
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">核心 Python 引擎自動運算</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    系統一鍵執行「健康度分類」、「1.5x 缺口演算」與「RapidFuzz 文字去重」多重檢驗。
+                    系統一鍵執行「淺力數據分類」、「1.5x 缺口演算」與「文字去重」多重檢驗。
                 </p>
             </div>
 
@@ -181,9 +162,9 @@
                     </span>
                     <i class="fa-solid fa-file-circle-check text-slate-300 text-xl"></i>
                 </div>
-                <h4 class="text-base font-bold text-slate-800 mb-2">產出可決策之品牌診斷表</h4>
+                <h4 class="text-base font-bold text-slate-800 mb-2">產出調整/建議診斷表</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    自動生成含精準建議階層、缺口數量與招商說服文案的完整選品決策報表。
+                    自動生成含精準數據背景、缺口數量與調整方向文案的完整選品表。
                 </p>
             </div>
         </div>
@@ -193,18 +174,18 @@
     <section class="max-w-5xl mx-auto py-16 px-6">
         <div class="text-center mb-8">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Interactive Dashboard</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">雙核心演算法與決策模擬展演</h3>
-            <p class="text-xs text-warm-subtext mt-2">點擊切換模組，檢視對應演算法邏輯與抽象化數據呈現</p>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">雙核心演算法與方向調整</h3>
+            <p class="text-xs text-warm-subtext mt-2">點擊切換模組，檢視對應演算法邏輯與數據呈現</p>
         </div>
 
         <!-- 模組切換 Switcher 控制按鈕 -->
         <div class="flex justify-center mb-8">
             <div class="bg-warm-accent p-1.5 rounded-xl border border-warm-border flex gap-2">
                 <button id="btn-mod1" onclick="switchModule('mod1')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-orange shadow-sm border border-warm-border">
-                    <i class="fa-solid fa-chart-pie"></i> Module 01: 品牌潛力診斷
+                    <i class="fa-solid fa-chart-pie"></i> 01: 品牌潛力診斷
                 </button>
                 <button id="btn-mod2" onclick="switchModule('mod2')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800">
-                    <i class="fa-solid fa-calculator"></i> Module 02: 補品診斷與缺口演算
+                    <i class="fa-solid fa-calculator"></i> 02: 補品診斷與缺口演算
                 </button>
             </div>
         </div>
@@ -216,7 +197,7 @@
             <div class="bg-[#f8fafc] border-b border-slate-200 px-4 flex items-center gap-1 text-xs pt-2">
                 <div id="tab-sheet-1" class="bg-white border-t-2 border-brand-orange border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm">
                     <i id="tab-icon" class="fa-solid fa-chart-pie text-brand-orange"></i>
-                    <span id="tab-title">Module 01: 品牌潛力診斷</span>
+                    <span id="tab-title">01: 品牌潛力診斷</span>
                 </div>
             </div>
 
@@ -228,8 +209,8 @@
                     <!-- 邏輯說明 -->
                     <div class="bg-warm-accent border border-warm-border rounded-xl p-5">
                         <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-0.5 rounded border border-brand-orange/20">Module 01 邏輯</span>
-                            <h4 class="text-sm md:text-base font-bold text-slate-800">品牌健康度與潛力矩陣分類</h4>
+                            <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-0.5 rounded border border-brand-orange/20">01 邏輯</span>
+                            <h4 class="text-sm md:text-base font-bold text-slate-800">品牌潛力矩陣分類</h4>
                         </div>
                         <p class="text-xs text-warm-subtext leading-relaxed">
                             整合近三月營收 (L3M)、YTD 總額與 MoM 成長率，自動將品牌歸類為四大經營標籤：
