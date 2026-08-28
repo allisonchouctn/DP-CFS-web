@@ -14,10 +14,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            orange: '#f94d29',
-                            dark: '#0b1120',
-                            card: '#151f32',
-                            border: '#24334d'
+                            orange: '#f94d29', // 經典電商橘
+                            bg: '#f8fafc',     // 淺色底色 (Slate-50)
+                            card: '#ffffff',   // 純白卡片
+                            border: '#e2e8f0'  // 淺色邊框 (Slate-200)
                         }
                     }
                 }
@@ -25,16 +25,16 @@
         }
     </script>
 </head>
-<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen">
+<body class="bg-brand-bg text-slate-800 font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen">
 
-    <!-- 頂部導覽列 Navbar -->
-    <nav class="border-b border-brand-border/60 bg-brand-dark/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4">
+    <!-- 頂部導覽列 Navbar (亮色版) -->
+    <nav class="border-b border-brand-border bg-white/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4 shadow-sm">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-brand-orange text-white font-bold flex items-center justify-center shadow-lg shadow-brand-orange/20">
+                <div class="w-8 h-8 rounded-lg bg-brand-orange text-white font-bold flex items-center justify-center shadow-md shadow-brand-orange/20">
                     <i class="fa-solid fa-chart-line text-sm"></i>
                 </div>
-                <span class="font-bold text-base md:text-lg text-white tracking-wide">CFS Analytics</span>
+                <span class="font-bold text-base md:text-lg text-slate-900 tracking-wide">CFS Analytics</span>
             </div>
             <span class="text-[11px] px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange font-semibold tracking-wider">
                 SYSTEM SHOWCASE
@@ -43,7 +43,7 @@
     </nav>
 
     <!-- 1. Hero Banner (主視覺與核心數據) -->
-    <header class="relative pt-16 pb-16 text-center border-b border-brand-border/60 bg-gradient-to-b from-slate-900 via-brand-dark to-brand-dark px-6">
+    <header class="relative pt-16 pb-16 text-center border-b border-brand-border bg-white px-6">
         <div class="max-w-4xl mx-auto">
             <!-- 頂部標籤 -->
             <div class="inline-flex items-center gap-2 px-3.5 py-1 text-xs font-semibold text-brand-orange bg-brand-orange/10 border border-brand-orange/20 rounded-full mb-6">
@@ -52,103 +52,131 @@
             </div>
             
             <!-- 大標題 -->
-            <h1 class="text-3xl md:text-5xl font-black text-white tracking-tight mb-5 leading-tight">
+            <h1 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-5 leading-tight">
                 CFS 智慧選品系統<br>
                 <span class="text-brand-orange">用資料力幫品牌找爆款</span>
             </h1>
             
-            <p class="text-sm md:text-base text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p class="text-sm md:text-base text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
                 擺脫人工 Excel 盲目篩選！整合 Python 自動化診斷、RapidFuzz 智慧去重與 1.5x 缺口演算，精準極大化活動 GMV。
             </p>
 
             <!-- 核心指標數據卡片 -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
-                <div class="p-5 bg-brand-card rounded-xl border border-brand-border shadow-xl text-center hover:border-brand-orange/50 transition">
+                <div class="p-5 bg-brand-bg rounded-xl border border-brand-border shadow-sm text-center hover:border-brand-orange/50 transition">
                     <div class="text-3xl font-black text-brand-orange">100%</div>
-                    <div class="text-xs text-slate-400 mt-1 font-medium">品牌健康度自動診斷</div>
+                    <div class="text-xs text-slate-500 mt-1 font-medium">品牌健康度自動診斷</div>
                 </div>
-                <div class="p-5 bg-brand-card rounded-xl border border-brand-border shadow-xl text-center hover:border-brand-orange/50 transition">
-                    <div class="text-3xl font-black text-emerald-400">0%</div>
-                    <div class="text-xs text-slate-400 mt-1 font-medium">同款異名爆款重複率</div>
+                <div class="p-5 bg-brand-bg rounded-xl border border-brand-border shadow-sm text-center hover:border-brand-orange/50 transition">
+                    <div class="text-3xl font-black text-emerald-600">0%</div>
+                    <div class="text-xs text-slate-500 mt-1 font-medium">同款異名爆款重複率</div>
                 </div>
-                <div class="p-5 bg-brand-card rounded-xl border border-brand-border shadow-xl text-center col-span-2 md:col-span-1 hover:border-brand-orange/50 transition">
-                    <div class="text-3xl font-black text-amber-400">1.5x</div>
-                    <div class="text-xs text-slate-400 mt-1 font-medium">動態補品缺口精算</div>
+                <div class="p-5 bg-brand-bg rounded-xl border border-brand-border shadow-sm text-center col-span-2 md:col-span-1 hover:border-brand-orange/50 transition">
+                    <div class="text-3xl font-black text-amber-500">1.5x</div>
+                    <div class="text-xs text-slate-500 mt-1 font-medium">動態補品缺口精算</div>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- 2. 解決方案 (Solutions & Benefits) -->
-    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-brand-border/60">
+    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-brand-border">
         <div class="text-center mb-12">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Core Solutions</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-white">智慧演算，解決四大選品痛點</h3>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">智慧演算，解決四大選品痛點</h3>
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
             <!-- 解決方案 1 -->
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl hover:border-brand-orange/40 transition">
+            <div class="bg-white border border-brand-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
-                <h4 class="text-base font-bold text-white mb-2">1.5x 補品缺口演算</h4>
-                <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                <h4 class="text-base font-bold text-slate-900 mb-2">1.5x 補品缺口演算</h4>
+                <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                     根據歷史爆款量 (A) 與本月已提報量 (B)，自動算出最佳補品缺口數量，不再憑感覺猜測補品進度。
                 </p>
             </div>
 
             <!-- 解決方案 2 -->
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl hover:border-brand-orange/40 transition">
-                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4 text-base">
+            <div class="bg-white border border-brand-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-filter"></i>
                 </div>
-                <h4 class="text-base font-bold text-white mb-2">季節與價格帶動態過濾</h4>
-                <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                <h4 class="text-base font-bold text-slate-900 mb-2">季節與價格帶動態過濾</h4>
+                <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                     智慧辨識當前月份（例：夏季自動排除燒仙草等熱飲品項），避開錯置無效資源，大幅提高轉化率。
                 </p>
             </div>
 
             <!-- 解決方案 3 -->
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl hover:border-brand-orange/40 transition">
-                <div class="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center mb-4 text-base">
+            <div class="bg-white border border-brand-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-sky-50 border border-sky-200 text-sky-600 flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-font"></i>
                 </div>
-                <h4 class="text-base font-bold text-white mb-2">RapidFuzz 同款異名智慧去重</h4>
-                <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                <h4 class="text-base font-bold text-slate-900 mb-2">RapidFuzz 同款異名智慧去重</h4>
+                <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                     利用文字模糊比對演算法，自動識別「同商品但不同名稱」的舊爆款，防止重覆提報造成的版面浪費。
                 </p>
             </div>
 
             <!-- 解決方案 4 -->
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl hover:border-brand-orange/40 transition">
-                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-4 text-base">
+            <div class="bg-white border border-brand-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
+                <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200 text-amber-600 flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
-                <h4 class="text-base font-bold text-white mb-2">業務導向動態建議生成</h4>
-                <p class="text-xs md:text-sm text-slate-400 leading-relaxed">
+                <h4 class="text-base font-bold text-slate-900 mb-2">業務導向動態建議生成</h4>
+                <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
                     結合銷售峰值與歷史指標，自動輸出具強烈說服力的動態選品建議文案，幫助招商溝通事半功倍。
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 3. 雙核心功能展演 (Interactive Showcases) -->
-    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-brand-border/60">
+    <!-- 3. 系統架構與導入流程 (已移動至 Core Solutions 下方) -->
+    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-brand-border bg-white">
         <div class="text-center mb-12">
-            <h2 class="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">Interactive Showcase</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-white">雙核心演算法功能解析</h3>
+            <h2 class="text-xs font-bold text-sky-600 uppercase tracking-widest mb-2">How It Works</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">簡單 3 步驟快速導入</h3>
         </div>
 
-        <!-- 儀表板視窗 Mockup -->
-        <div class="bg-brand-card border border-brand-border rounded-xl overflow-hidden shadow-2xl">
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-brand-bg border border-brand-border p-6 rounded-xl text-center shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-white text-brand-orange border border-brand-border font-bold flex items-center justify-center mx-auto mb-4 text-base shadow-sm">1</div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1.5">資料對接 (Data Feed)</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">自動匯入/讀取 Google Sheets 或後端資料庫中的歷史銷售與提報清單。</p>
+            </div>
+
+            <div class="bg-brand-bg border border-brand-border p-6 rounded-xl text-center shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-white text-emerald-600 border border-brand-border font-bold flex items-center justify-center mx-auto mb-4 text-base shadow-sm">2</div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1.5">自動運算 (Auto Analytics)</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">後端 Python 引擎執行 RapidFuzz 去重、缺口演算與標籤化分類。</p>
+            </div>
+
+            <div class="bg-brand-bg border border-brand-border p-6 rounded-xl text-center shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-white text-amber-500 border border-brand-border font-bold flex items-center justify-center mx-auto mb-4 text-base shadow-sm">3</div>
+                <h4 class="text-sm font-bold text-slate-900 mb-1.5">報表輸出 (Actionable Insights)</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">即時產出視覺化 Dashboard 或是填補好的建議清單，供營運直接決策。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 雙核心功能展演 (Interactive Showcases) -->
+    <section class="max-w-5xl mx-auto py-16 px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Interactive Showcase</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-900">雙核心演算法功能解析</h3>
+        </div>
+
+        <!-- Dashboard 視窗 Mockup (保特黑框以強調科技示範感) -->
+        <div class="bg-white border border-brand-border rounded-xl overflow-hidden shadow-xl">
             <!-- 視窗標頭列 -->
-            <div class="bg-slate-950 px-4 py-3 border-b border-brand-border flex items-center justify-between">
+            <div class="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
                 <div class="flex items-center gap-2">
                     <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
                     <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                     <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-                    <span class="text-xs text-slate-500 font-mono ml-2">cfs-analytics-engine // dashboard-v2</span>
+                    <span class="text-xs text-slate-400 font-mono ml-2">cfs-analytics-engine // dashboard-v2</span>
                 </div>
                 <span class="text-[10px] text-brand-orange bg-brand-orange/10 px-2 py-0.5 rounded font-mono font-bold">LIVE ENGINE</span>
             </div>
@@ -160,25 +188,25 @@
                 <div>
                     <div class="flex items-center gap-3 mb-3">
                         <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded border border-brand-orange/30">Module 01</span>
-                        <h4 class="text-lg font-bold text-white">品牌潛力診斷與健康度健檢</h4>
+                        <h4 class="text-lg font-bold text-slate-900">品牌潛力診斷與健康度健檢</h4>
                     </div>
-                    <p class="text-xs md:text-sm text-slate-400 mb-5">整合 L3M 營收、YTD 總額與 MoM 成長率，自動歸類品牌標籤與 BCG 品項矩陣：</p>
+                    <p class="text-xs md:text-sm text-slate-600 mb-5">整合 L3M 營收、YTD 總額與 MoM 成長率，自動歸類品牌標籤與 BCG 品項矩陣：</p>
                     
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        <div class="p-3 bg-brand-dark/90 border border-brand-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-slate-200">✨ 全新品牌</span>
+                        <div class="p-3 bg-brand-bg border border-brand-border rounded-lg text-center">
+                            <span class="text-xs md:text-sm font-semibold text-slate-700">✨ 全新品牌</span>
                             <div class="text-[10px] text-slate-500 mt-1">創始期成長監控</div>
                         </div>
-                        <div class="p-3 bg-brand-dark/90 border border-brand-border rounded-lg text-center">
+                        <div class="p-3 bg-brand-bg border border-brand-border rounded-lg text-center">
                             <span class="text-xs md:text-sm font-semibold text-brand-orange">🌟 高潛力品牌</span>
                             <div class="text-[10px] text-slate-500 mt-1">重點資源挹注</div>
                         </div>
-                        <div class="p-3 bg-brand-dark/90 border border-brand-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-red-400">⚠️ 警訊衰退</span>
+                        <div class="p-3 bg-brand-bg border border-brand-border rounded-lg text-center">
+                            <span class="text-xs md:text-sm font-semibold text-red-600">⚠️ 警訊衰退</span>
                             <div class="text-[10px] text-slate-500 mt-1">需補品/活動急救</div>
                         </div>
-                        <div class="p-3 bg-brand-dark/90 border border-brand-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-sky-400">🔵 穩定發展</span>
+                        <div class="p-3 bg-brand-bg border border-brand-border rounded-lg text-center">
+                            <span class="text-xs md:text-sm font-semibold text-sky-600">🔵 穩定發展</span>
                             <div class="text-[10px] text-slate-500 mt-1">維持既有營運</div>
                         </div>
                     </div>
@@ -189,12 +217,12 @@
                 <!-- 模組 2 -->
                 <div>
                     <div class="flex items-center gap-3 mb-3">
-                        <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-2.5 py-1 rounded border border-emerald-800/60">Module 02</span>
-                        <h4 class="text-lg font-bold text-white">補品診斷與業務動態建議文案</h4>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">Module 02</span>
+                        <h4 class="text-lg font-bold text-slate-900">補品診斷與業務動態建議文案</h4>
                     </div>
-                    <p class="text-xs md:text-sm text-slate-400 mb-4">自動判讀商品歷史銷量與活動峰值，並直接產出可供業務溝通的說服文案：</p>
+                    <p class="text-xs md:text-sm text-slate-600 mb-4">自動判讀商品歷史銷量與活動峰值，並直接產出可供業務溝通的說服文案：</p>
 
-                    <div class="bg-brand-dark border border-brand-border p-4 rounded-lg font-mono text-xs text-slate-300">
+                    <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg font-mono text-xs text-slate-300">
                         <div class="text-slate-500 mb-2">// 系統即時動態文案產出範例</div>
                         <div class="text-emerald-400 leading-relaxed">▶ [建議納入] 該品項為全歷史銷量第一爆款，今年最高單月 GMV 達 $450,000，強烈建議納入本次 CFS 主推活動！</div>
                     </div>
@@ -204,36 +232,8 @@
         </div>
     </section>
 
-    <!-- 4. 系統架構與導入流程 (Architecture) -->
-    <section class="max-w-5xl mx-auto py-16 px-6">
-        <div class="text-center mb-12">
-            <h2 class="text-xs font-bold text-sky-400 uppercase tracking-widest mb-2">How It Works</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-white">簡單 3 步驟快速導入</h3>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl text-center">
-                <div class="w-10 h-10 rounded-full bg-brand-dark text-brand-orange border border-brand-border font-bold flex items-center justify-center mx-auto mb-4 text-base">1</div>
-                <h4 class="text-sm font-bold text-white mb-1.5">資料對接 (Data Feed)</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">自動匯入/讀取 Google Sheets 或後端資料庫中的歷史銷售與提報清單。</p>
-            </div>
-
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl text-center">
-                <div class="w-10 h-10 rounded-full bg-brand-dark text-emerald-400 border border-brand-border font-bold flex items-center justify-center mx-auto mb-4 text-base">2</div>
-                <h4 class="text-sm font-bold text-white mb-1.5">自動運算 (Auto Analytics)</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">後端 Python 引擎執行 RapidFuzz 去重、缺口演算與標籤化分類。</p>
-            </div>
-
-            <div class="bg-brand-card border border-brand-border p-6 rounded-xl text-center">
-                <div class="w-10 h-10 rounded-full bg-brand-dark text-amber-400 border border-brand-border font-bold flex items-center justify-center mx-auto mb-4 text-base">3</div>
-                <h4 class="text-sm font-bold text-white mb-1.5">報表輸出 (Actionable Insights)</h4>
-                <p class="text-xs text-slate-400 leading-relaxed">即時產出視覺化 Dashboard 或是填補好的建議清單，供營運直接決策。</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="text-center py-8 text-xs text-slate-600 border-t border-brand-border/60">
+    <footer class="text-center py-8 text-xs text-slate-500 border-t border-brand-border bg-white">
         <p>CFS Analytics & Business Intelligence System Architecture</p>
     </footer>
 
