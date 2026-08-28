@@ -46,16 +46,14 @@
         </div>
     </nav>
 
-    <!-- 1. Hero Banner (主視覺，已移除三個數據卡片) -->
+    <!-- 1. Hero Banner -->
     <header class="relative pt-16 pb-12 text-center border-b border-warm-border bg-gradient-to-b from-white via-warm-bg to-warm-bg px-6">
         <div class="max-w-4xl mx-auto">
-            <!-- 頂部標籤 -->
             <div class="inline-flex items-center gap-2 px-3.5 py-1 text-xs font-semibold text-brand-orange bg-brand-orange/10 border border-brand-orange/20 rounded-full mb-6">
                 <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
                 Data-Driven Product Decision Engine
             </div>
             
-            <!-- 大標題 -->
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-5 leading-tight">
                 DP CFS 選品系統<br>
                 <span class="text-brand-orange">透過數據資料找尋熱銷品</span>
@@ -126,40 +124,31 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 relative">
-            <!-- Step 1 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
                 <div class="flex items-center justify-between mb-4">
-                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">
-                        01
-                    </span>
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">01</span>
                     <i class="fa-solid fa-file-import text-slate-300 text-xl"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">匯入歷史數據與提報表</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    載入歷史DP CFS GMV數據與當月廠商提報之品項清單（支援標準 Excel / Google Sheets）。
+                    載入歷史 DP CFS GMV 數據與當月廠商提報之品項清單（支援標準 Excel / Google Sheets）。
                 </p>
             </div>
 
-            <!-- Step 2 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
                 <div class="flex items-center justify-between mb-4">
-                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">
-                        02
-                    </span>
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">02</span>
                     <i class="fa-solid fa-gears text-slate-300 text-xl"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">核心 Python 引擎自動運算</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    系統一鍵執行「淺力數據分類」、「1.5x 缺口演算」與「文字去重」多重檢驗。
+                    系統一鍵執行「潛力數據分類」、「1.5x 缺口演算」與「文字去重」多重檢驗。
                 </p>
             </div>
 
-            <!-- Step 3 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
                 <div class="flex items-center justify-between mb-4">
-                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">
-                        03
-                    </span>
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">03</span>
                     <i class="fa-solid fa-file-circle-check text-slate-300 text-xl"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">產出調整/建議診斷表</h4>
@@ -171,7 +160,7 @@
     </section>
 
     <!-- 3. 雙核心演算法動態解析與試算表展演 -->
-    <section class="max-w-5xl mx-auto py-16 px-6">
+    <section class="max-w-6xl mx-auto py-16 px-6">
         <div class="text-center mb-8">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Interactive Dashboard</h2>
             <h3 class="text-2xl md:text-3xl font-bold text-slate-800">雙核心演算法與方向調整</h3>
@@ -182,7 +171,7 @@
         <div class="flex justify-center mb-8">
             <div class="bg-warm-accent p-1.5 rounded-xl border border-warm-border flex gap-2">
                 <button id="btn-mod1" onclick="switchModule('mod1')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-orange shadow-sm border border-warm-border">
-                    <i class="fa-solid fa-chart-pie"></i> 01: 品牌潛力診斷
+                    <i class="fa-solid fa-chart-pie"></i> 01: 品牌熱銷與潛力診斷
                 </button>
                 <button id="btn-mod2" onclick="switchModule('mod2')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800">
                     <i class="fa-solid fa-calculator"></i> 02: 補品診斷與缺口演算
@@ -197,89 +186,166 @@
             <div class="bg-[#f8fafc] border-b border-slate-200 px-4 flex items-center gap-1 text-xs pt-2">
                 <div id="tab-sheet-1" class="bg-white border-t-2 border-brand-orange border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm">
                     <i id="tab-icon" class="fa-solid fa-chart-pie text-brand-orange"></i>
-                    <span id="tab-title">01: 品牌潛力診斷</span>
+                    <span id="tab-title">Module 01: 熱銷/潛力品</span>
                 </div>
             </div>
 
             <!-- Dashboard 內容區域 -->
-            <div class="p-6 md:p-8 bg-white">
+            <div class="p-4 md:p-6 bg-white">
 
                 <!-- 模組 01 展示內容 -->
                 <div id="content-mod1" class="space-y-6">
-                    <!-- 邏輯說明 -->
-                    <div class="bg-warm-accent border border-warm-border rounded-xl p-5">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-0.5 rounded border border-brand-orange/20">01 邏輯</span>
-                            <h4 class="text-sm md:text-base font-bold text-slate-800">品牌潛力矩陣分類</h4>
+                    
+                    <!-- 頂部品牌選擇與統計看板 (還原 Excel 頂部儀表板) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-amber-50/50 border border-amber-200/60 p-4 rounded-xl flex flex-col justify-between">
+                            <span class="text-xs font-bold text-amber-800 mb-1">近三個月合計統計</span>
+                            <div class="text-xs text-slate-600 font-mono space-y-1">
+                                <div>以 202X-06 ~ 08 近 3 個月統計：</div>
+                                <div class="text-slate-800 font-bold flex items-center gap-1">
+                                    <span>💥 熱銷平均：</span>
+                                    <span class="text-brand-orange">約 XX 品</span>
+                                </div>
+                                <div class="text-slate-800 font-bold flex items-center gap-1">
+                                    <span>💡 建議：</span>
+                                    <span class="text-slate-600">維持優化</span>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-xs text-warm-subtext leading-relaxed">
-                            整合近三月營收 (L3M)、YTD 總額與 MoM 成長率，自動將品牌歸類為四大經營標籤：
-                        </p>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mt-4">
-                            <div class="p-2.5 bg-white border border-warm-border rounded text-center">
-                                <span class="text-xs font-bold text-slate-700">✨ 全新品牌</span>
-                                <div class="text-[10px] text-warm-subtext mt-0.5">創始期成長監控</div>
+
+                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl md:col-span-2 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">請選擇品牌</span>
+                                <div class="text-base font-extrabold text-slate-800 flex items-center gap-2">
+                                    <i class="fa-solid fa-store text-brand-orange"></i> Brand A
+                                </div>
                             </div>
-                            <div class="p-2.5 bg-white border border-warm-border rounded text-center">
-                                <span class="text-xs font-bold text-brand-orange">🌟 高潛力品牌</span>
-                                <div class="text-[10px] text-warm-subtext mt-0.5">重點資源主推</div>
-                            </div>
-                            <div class="p-2.5 bg-white border border-warm-border rounded text-center">
-                                <span class="text-xs font-bold text-red-500">⚠️ 警訊衰退</span>
-                                <div class="text-[10px] text-warm-subtext mt-0.5">需補品/活動拯救</div>
-                            </div>
-                            <div class="p-2.5 bg-white border border-warm-border rounded text-center">
-                                <span class="text-xs font-bold text-sky-600">🔵 穩定發展</span>
-                                <div class="text-[10px] text-warm-subtext mt-0.5">維持既有動能</div>
+                            <div class="text-right text-xs font-mono text-slate-500">
+                                <div>近3月 GMV: <strong class="text-slate-800">$X,XXX,XXX</strong></div>
+                                <div>YTD 累計: <strong class="text-slate-800">$X,XXX,XXX</strong></div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 模組 01 表格 -->
-                    <div>
-                        <div class="flex items-center justify-between mb-3">
-                            <h5 class="text-xs md:text-sm font-bold text-slate-800 flex items-center gap-2">
-                                <i class="fa-solid fa-table text-brand-orange"></i> 品牌售賣區品項數據展演 (依 L3M 排序)
+                    <!-- 三欄式結構：還原 Excel 圖片版面配置 (各月矩陣 / Top 10 品牌 / 品牌 Top 30) -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        
+                        <!-- 左側：各月熱銷與潛力品矩陣分析 (4/12) -->
+                        <div class="lg:col-span-4 space-y-3">
+                            <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5 border-b pb-2 border-slate-200">
+                                <i class="fa-solid fa-calendar-days text-brand-orange"></i> 各月熱銷與潛力品矩陣分析
                             </h5>
-                            <span class="text-[11px] text-warm-subtext">示範品牌：<strong class="text-slate-800">Brand X</strong></span>
+                            <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
+                                <table class="w-full text-left text-xs font-mono">
+                                    <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
+                                        <tr>
+                                            <th class="p-2 border-r border-slate-200 text-center">月份</th>
+                                            <th class="p-2 border-r border-slate-200 text-right">總品項數</th>
+                                            <th class="p-2 text-right text-brand-orange">熱銷品</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-01</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-02</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-03</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-04</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
+                                        <tr class="bg-amber-50/40"><td class="p-1.5 border-r border-slate-200 text-center font-bold">202X-05</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold text-brand-orange">XX</td></tr>
+                                        <tr class="bg-amber-50/40"><td class="p-1.5 border-r border-slate-200 text-center font-bold">202X-06</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold text-brand-orange">XX</td></tr>
+                                        <tr class="bg-amber-50/40"><td class="p-1.5 border-r border-slate-200 text-center font-bold">202X-07</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold text-brand-orange">XX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-08</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
-                        <div class="overflow-x-auto border border-slate-200 rounded-lg">
-                            <table class="w-full text-left text-xs">
-                                <thead class="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold">
-                                    <tr>
-                                        <th class="p-2.5 border-r border-slate-200 text-center">近3月排名</th>
-                                        <th class="p-2.5 border-r border-slate-200">品項名稱 (示範)</th>
-                                        <th class="p-2.5 border-r border-slate-200 text-right">近3月 GMV</th>
-                                        <th class="p-2.5 border-r border-slate-200 text-right">YTD 累計 GMV</th>
-                                        <th class="p-2.5 text-right">當月 GMV (MTD)</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-slate-200 text-slate-700 font-mono">
-                                    <tr class="hover:bg-warm-accent/40">
-                                        <td class="p-2.5 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
-                                        <td class="p-2.5 border-r border-slate-200 font-sans font-medium">Brand X 歷史主力品項 #01</td>
-                                        <td class="p-2.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-2.5 border-r border-slate-200 text-right">$XXX,XXX</td>
-                                        <td class="p-2.5 text-right text-emerald-600">$XX,XXX</td>
-                                    </tr>
-                                    <tr class="hover:bg-warm-accent/40">
-                                        <td class="p-2.5 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
-                                        <td class="p-2.5 border-r border-slate-200 font-sans font-medium">Brand X 歷史熱銷品項 #02</td>
-                                        <td class="p-2.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-2.5 border-r border-slate-200 text-right">$XXX,XXX</td>
-                                        <td class="p-2.5 text-right text-emerald-600">$XX,XXX</td>
-                                    </tr>
-                                    <tr class="hover:bg-warm-accent/40">
-                                        <td class="p-2.5 border-r border-slate-200 text-center font-bold text-brand-orange">#3</td>
-                                        <td class="p-2.5 border-r border-slate-200 font-sans font-medium">Brand X 潛力爆款品項 #03</td>
-                                        <td class="p-2.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-2.5 border-r border-slate-200 text-right">$XXX,XXX</td>
-                                        <td class="p-2.5 text-right text-emerald-600">$XX,XXX</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <!-- 中間：Top 10 品牌 (依 L3M 排序) (3/12) -->
+                        <div class="lg:col-span-3 space-y-3">
+                            <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5 border-b pb-2 border-slate-200">
+                                <i class="fa-solid fa-trophy text-amber-500"></i> Top 10 品牌 (依 L3M 排序)
+                            </h5>
+                            <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
+                                <table class="w-full text-left text-xs font-mono">
+                                    <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
+                                        <tr>
+                                            <th class="p-2 border-r border-slate-200 text-center">排名</th>
+                                            <th class="p-2 border-r border-slate-200">品牌名稱</th>
+                                            <th class="p-2 text-right">近3月GMV</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
+                                        <tr class="bg-orange-50/60 font-bold"><td class="p-1.5 border-r border-slate-200 text-center text-brand-orange">#1</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand A</td><td class="p-1.5 text-right">$X,XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#2</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand B</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#3</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand C</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#4</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand D</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#5</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand E</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#6</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand F</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#7</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand G</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#8</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand H</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+
+                        <!-- 右側：品牌 Top 30 售賣區 (依 L3M 排序) (5/12) -->
+                        <div class="lg:col-span-5 space-y-3">
+                            <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
+                                <span class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-list-ol text-sky-600"></i> 品牌 Top 30 售賣區 (依 L3M 排序)
+                                </span>
+                                <span class="text-[11px] text-warm-subtext font-mono">Brand A</span>
+                            </h5>
+                            <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
+                                <table class="w-full text-left text-xs font-mono">
+                                    <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
+                                        <tr>
+                                            <th class="p-2 border-r border-slate-200">品項名稱</th>
+                                            <th class="p-2 border-r border-slate-200 text-center">L3M 排名</th>
+                                            <th class="p-2 border-r border-slate-200 text-right">近3月 GMV</th>
+                                            <th class="p-2 text-right">當月 GMV (MTD)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 歷史明星餐券套餐 #01</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-right">$XXX,XXX</td>
+                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 經典超值組合 #02</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 人氣精選主餐 #03</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-brand-orange">#3</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 熱門雙人分享餐 #04</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold">#4</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 招牌特惠組 #05</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold">#5</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50 bg-blue-50/30">
+                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px] font-semibold text-blue-900">Brand A 季節限定活動新品 #14</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-sky-600">#14</td>
+                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-1.5 text-right text-slate-400">$0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -329,7 +395,7 @@
                                         <th class="p-2.5 border-r border-slate-200 text-center">近3月排名</th>
                                         <th class="p-2.5 border-r border-slate-200 text-right">近3月 GMV</th>
                                         <th class="p-2.5 border-r border-slate-200 text-center">當月新品同類?</th>
-                                        <th class="p-2.5 border-r border-slate-200 text-center">建檔層級</th>
+                                        <th class="p-2.5 border-r border-slate-200 text-center">建議層級</th>
                                         <th class="p-2.5">原因與建議範本</th>
                                     </tr>
                                 </thead>
@@ -395,23 +461,19 @@
                 content1.classList.remove('hidden');
                 content2.classList.add('hidden');
 
-                // 按鈕樣式
                 btn1.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-orange shadow-sm border border-warm-border";
                 btn2.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800";
 
-                // 頁籤內容
-                tabTitle.innerText = "Module 01: 品牌潛力診斷";
+                tabTitle.innerText = "Module 01: 品牌熱銷與潛力診斷";
                 tabIcon.className = "fa-solid fa-chart-pie text-brand-orange";
                 tabSheet.className = "bg-white border-t-2 border-brand-orange border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm";
             } else {
                 content1.classList.add('hidden');
                 content2.classList.remove('hidden');
 
-                // 按鈕樣式
                 btn2.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-amber shadow-sm border border-warm-border";
                 btn1.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800";
 
-                // 頁籤內容
                 tabTitle.innerText = "Module 02: 補品診斷與缺口演算";
                 tabIcon.className = "fa-solid fa-calculator text-brand-amber";
                 tabSheet.className = "bg-white border-t-2 border-brand-amber border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm";
