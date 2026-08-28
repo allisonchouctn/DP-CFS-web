@@ -196,9 +196,40 @@
                 <!-- 模組 01 展示內容 -->
                 <div id="content-mod1" class="space-y-6">
                     
-                    <!-- 頂部品牌選擇與統計看板 (還原 Excel 頂部儀表板) -->
+                    <!-- 保留：頂部橘色邏輯區塊 (四象限 SKU 分類邏輯，簡化為兩句說明) -->
+                    <div class="bg-amber-50/40 border border-amber-200/80 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-brand-orange bg-amber-100/80 px-2.5 py-0.5 rounded border border-amber-200">Module 01 邏輯</span>
+                            <h4 class="text-sm md:text-base font-bold text-slate-800">商品 (SKU) 四象限矩陣分類</h4>
+                        </div>
+                        <p class="text-xs text-warm-subtext leading-relaxed mb-4">
+                            依據銷量排名 Top 25% 與 75% 累積 GMV 貢獻度進行雙軸交叉分析。一句話總結：透過銷量與營收雙指標，自動將商品分類為四大類型，精準掌握爆款與長尾商品。
+                        </p>
+                        
+                        <!-- 四大分類標籤展示 -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">🌟 熱銷品 (Star)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">Top 25% 排名 ✕ 75% GMV 內</div>
+                            </div>
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">🐔 長尾高頻品 (Volume)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">Top 25% 排名 ✕ 超過 75% GMV</div>
+                            </div>
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">🐴 高單價 (Value)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">非 Top 25% 排名 ✕ 75% GMV 內</div>
+                            </div>
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">📦 一般品 (Others)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">非 Top 25% 排名 ✕ 超過 75% GMV</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 保留：頂部品牌選擇與統計看板 -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div class="bg-amber-50/50 border border-amber-200/60 p-4 rounded-xl flex flex-col justify-between">
+                        <div class="bg-amber-50/30 border border-amber-200/60 p-4 rounded-xl flex flex-col justify-between">
                             <span class="text-xs font-bold text-amber-800 mb-1">近三個月合計統計</span>
                             <div class="text-xs text-slate-600 font-mono space-y-1">
                                 <div>以 202X-06 ~ 08 近 3 個月統計：</div>
@@ -227,7 +258,7 @@
                         </div>
                     </div>
 
-                    <!-- 三欄式結構：還原 Excel 圖片版面配置 (各月矩陣 / Top 10 品牌 / 品牌 Top 30) -->
+                    <!-- 保留新版精美呈現：三欄式結構 (各月矩陣 / Top 10 品牌 / 品牌 Top 30) -->
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                         
                         <!-- 左側：各月熱銷與潛力品矩陣分析 (4/12) -->
