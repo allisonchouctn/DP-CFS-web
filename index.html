@@ -14,7 +14,7 @@
                 extend: {
                     colors: {
                         warm: {
-                            bg: '#fdfbf7',       // 很淡的暖黃奶茶底色
+                            bg: '#fdfbf7',       // 淡暖黃奶茶底色
                             card: '#ffffff',     // 純白卡片
                             accent: '#fcf8f2',   // 極淡暖蜜桃/暖黃卡片底色
                             border: '#f0e6d8',   // 柔和暖色邊框
@@ -24,7 +24,8 @@
                         brand: {
                             orange: '#f05a28',   // 質感珊瑚橘
                             amber: '#d97706',    // 質感琥珀黃
-                            emerald: '#059669'   // 柔和綠
+                            emerald: '#059669',  // 柔和綠
+                            gsheet: '#0f9d58'    // Google Sheets 經典綠
                         }
                     }
                 }
@@ -65,7 +66,7 @@
             </h1>
             
             <p class="text-sm md:text-base text-warm-subtext max-w-2xl mx-auto mb-10 leading-relaxed">
-                擺脫人工 Excel 盲目篩選！整合 Python 自動化診斷、RapidFuzz 智慧去重與 1.5x 缺口演算，精準極大化活動 GMV。
+                擺脫人工 Excel 盲目篩選！整合 Python 自動化診斷、RapidFuzz 智慧去重與 1.5x 缺口演算，自動精準補足熱銷品項。
             </p>
 
             <!-- 核心指標數據卡片 -->
@@ -94,144 +95,270 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6">
-            <!-- 解決方案 1 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-calculator"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">1.5x 補品缺口演算</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    根據歷史爆款量 (A) 與本月已提報量 (B)，自動算出最佳補品缺口數量，不再憑感覺猜測補品進度。
+                    自動比對歷史爆款量與當月已提報量，精算「建議至少提報」與「需增加品項數」，拒絕盲目提報。
                 </p>
             </div>
 
-            <!-- 解決方案 2 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200/60 text-brand-emerald flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-filter"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">季節與價格帶動態過濾</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    智慧辨識當前月份（例：夏季自動排除燒仙草等熱飲品項），避開錯置無效資源，大幅提高轉化率。
+                    智慧辨識當前月份（如夏季自動排除熱飲品項），精準過濾掉非當季錯置資源，確保檔期營收最大化。
                 </p>
             </div>
 
-            <!-- 解決方案 3 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-sky-50 border border-sky-200/60 text-sky-600 flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-font"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">RapidFuzz 同款異名智慧去重</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    利用文字模糊比對演算法，自動識別「同商品但不同名稱」的舊爆款，防止重覆提報造成的版面浪費。
+                    利用文字模糊比對演算法，精準比對「當月新品同類？」，自動排除同款異名重複提報之品項。
                 </p>
             </div>
 
-            <!-- 解決方案 4 -->
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200/60 text-brand-amber flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <h4 class="text-base font-bold text-slate-800 mb-2">業務導向動態建議生成</h4>
                 <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
-                    結合銷售峰值與歷史指標，自動輸出具強烈說服力的動態選品建議文案，幫助招商溝通事半功倍。
+                    自動判讀 L3M 排名與歷史 GMV 峰值，自動帶出「🔥 強烈建議」與完整「原因與建議」說服文案。
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 3. 簡單 3 步驟快速導入 -->
-    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border bg-warm-accent/50">
-        <div class="text-center mb-12">
-            <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">How It Works</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">簡單 3 步驟快速導入</h3>
+    <!-- 3. 雙核心演算法動態模組切換 (Dynamic Switcher) -->
+    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border">
+        <div class="text-center mb-8">
+            <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Interactive Engine</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">雙核心演算法動態解析</h3>
+            <p class="text-xs text-warm-subtext mt-2">點擊下方切換按鈕，可查看不同演算法模組的運作邏輯</p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white border border-warm-border p-6 rounded-xl text-center shadow-sm">
-                <div class="w-10 h-10 rounded-full bg-warm-accent text-brand-orange border border-warm-border font-bold flex items-center justify-center mx-auto mb-4 text-base shadow-sm">1</div>
-                <h4 class="text-sm font-bold text-slate-800 mb-1.5">資料對接 (Data Feed)</h4>
-                <p class="text-xs text-warm-subtext leading-relaxed">自動匯入/讀取 Google Sheets 或後端資料庫中的歷史銷售與提報清單。</p>
+        <!-- 模組切換 Switcher 控制按鈕 -->
+        <div class="flex justify-center mb-8">
+            <div class="bg-warm-accent p-1.5 rounded-xl border border-warm-border flex gap-2">
+                <button id="btn-mod1" onclick="switchModule('mod1')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-orange shadow-sm border border-warm-border">
+                    <i class="fa-solid fa-chart-pie"></i> Module 01: 品牌潛力診斷
+                </button>
+                <button id="btn-mod2" onclick="switchModule('mod2')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800">
+                    <i class="fa-solid fa-calculator"></i> Module 02: 補品診斷與缺口演算
+                </button>
             </div>
+        </div>
 
-            <div class="bg-white border border-warm-border p-6 rounded-xl text-center shadow-sm">
-                <div class="w-10 h-10 rounded-full bg-warm-accent text-brand-emerald border border-warm-border font-bold flex items-center justify-center mx-auto mb-4 text-base shadow-sm">2</div>
-                <h4 class="text-sm font-bold text-slate-800 mb-1.5">自動運算 (Auto Analytics)</h4>
-                <p class="text-xs text-warm-subtext leading-relaxed">後端 Python 引擎執行 RapidFuzz 去重、缺口演算與標籤化分類。</p>
+        <!-- 模組 01 內容容器 -->
+        <div id="content-mod1" class="bg-white border border-warm-border rounded-xl p-6 md:p-8 shadow-sm">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded border border-brand-orange/20">Module 01</span>
+                <h4 class="text-lg font-bold text-slate-800">品牌健康度與潛力矩陣分類</h4>
             </div>
+            <p class="text-xs md:text-sm text-warm-subtext mb-6">整合近三月營收 (L3M)、YTD 總額與 MoM 成長率，自動為品牌歸類經營標籤與資源分配等級：</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-warm-bg border border-warm-border rounded-lg text-center">
+                    <span class="text-xs md:text-sm font-bold text-slate-700">✨ 全新品牌</span>
+                    <div class="text-[11px] text-warm-subtext mt-1">創始期成長監控</div>
+                </div>
+                <div class="p-4 bg-warm-bg border border-warm-border rounded-lg text-center">
+                    <span class="text-xs md:text-sm font-bold text-brand-orange">🌟 高潛力品牌</span>
+                    <div class="text-[11px] text-warm-subtext mt-1">重點資源主推</div>
+                </div>
+                <div class="p-4 bg-warm-bg border border-warm-border rounded-lg text-center">
+                    <span class="text-xs md:text-sm font-bold text-red-500">⚠️ 警訊衰退</span>
+                    <div class="text-[11px] text-warm-subtext mt-1">需補品/活動拯救</div>
+                </div>
+                <div class="p-4 bg-warm-bg border border-warm-border rounded-lg text-center">
+                    <span class="text-xs md:text-sm font-bold text-sky-600">🔵 穩定發展</span>
+                    <div class="text-[11px] text-warm-subtext mt-1">維持既有動能</div>
+                </div>
+            </div>
+        </div>
 
-            <div class="bg-white border border-warm-border p-6 rounded-xl text-center shadow-sm">
-                <div class="w-10 h-10 rounded-full bg-warm-accent text-brand-amber border border-warm-border font-bold flex items-center justify-center mx-auto mb-4 text-base shadow-sm">3</div>
-                <h4 class="text-sm font-bold text-slate-800 mb-1.5">報表輸出 (Actionable Insights)</h4>
-                <p class="text-xs text-warm-subtext leading-relaxed">即時產出視覺化 Dashboard 或是填補好的建議清單，供營運直接決策。</p>
+        <!-- 模組 02 內容容器 (預設隱藏) -->
+        <div id="content-mod2" class="bg-white border border-warm-border rounded-xl p-6 md:p-8 shadow-sm hidden">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-bold text-brand-emerald bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">Module 02</span>
+                <h4 class="text-lg font-bold text-slate-800">1.5x 補品缺口演算與動態建議產生器</h4>
+            </div>
+            <p class="text-xs md:text-sm text-warm-subtext mb-6">自動計算熱銷指標缺口，判讀 GMV 歷史峰值，產出具強烈招商說服力的建議文案：</p>
+
+            <div class="bg-emerald-50/60 border border-emerald-200/80 p-4 rounded-lg font-mono text-xs text-slate-700">
+                <div class="text-emerald-700/70 mb-2 font-semibold">// 系統即時動態文案產出範例</div>
+                <div class="text-emerald-800 font-medium leading-relaxed">▶ [建議納入] 該品項為全歷史銷量第一爆款，今年最高單月 GMV 表現優異，強烈建議納入本次 CFS 主推活動！</div>
             </div>
         </div>
     </section>
 
-    <!-- 4. 雙核心功能展演 (全軟調亮色化調整) -->
+    <!-- 4. 實體報表視覺化展演 (去敏感化通用數據) -->
     <section class="max-w-5xl mx-auto py-16 px-6">
         <div class="text-center mb-12">
-            <h2 class="text-xs font-bold text-brand-emerald uppercase tracking-widest mb-2">Interactive Showcase</h2>
-            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">雙核心演算法功能解析</h3>
+            <h2 class="text-xs font-bold text-brand-emerald uppercase tracking-widest mb-2">Google Sheets Interactive Showcase</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">試算表決策架構展演</h3>
         </div>
 
-        <!-- 儀表板視窗 Mockup (改為柔和淺暖底) -->
-        <div class="bg-white border border-warm-border rounded-xl overflow-hidden shadow-md">
-            <!-- 視窗標頭列 (改為柔和奶油暖黃底) -->
-            <div class="bg-[#f7efe3] px-4 py-3 border-b border-warm-border flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <div class="w-3 h-3 rounded-full bg-rose-400"></div>
-                    <div class="w-3 h-3 rounded-full bg-amber-400"></div>
-                    <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-                    <span class="text-xs text-slate-600 font-mono ml-2 font-medium">cfs-analytics-engine // dashboard-v2</span>
+        <!-- 模擬 Google Sheets 視窗 -->
+        <div class="bg-white border border-warm-border rounded-xl overflow-hidden shadow-lg">
+            
+            <!-- Google Sheets 綠色頂部列 -->
+            <div class="bg-[#0f9d58] text-white px-4 py-3 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-file-excel text-lg"></i>
+                    <div>
+                        <div class="text-xs font-bold tracking-wide">CFS 智慧選品與品牌診斷決策表_Showcase.xlsx</div>
+                        <div class="text-[10px] text-emerald-100 opacity-90">Auto-generated by Python Core Engine</div>
+                    </div>
                 </div>
-                <span class="text-[10px] text-brand-orange bg-brand-orange/15 px-2 py-0.5 rounded font-mono font-bold">LIVE ENGINE</span>
+                <span class="text-[10px] bg-white/20 px-2.5 py-1 rounded font-mono font-semibold backdrop-blur-sm">Google Sheets Format</span>
             </div>
 
-            <!-- 內容展演區 -->
+            <!-- Sheets 模擬頁籤 Tab Bar -->
+            <div class="bg-[#f1f5f9] border-b border-slate-200 px-4 flex items-center gap-1 text-xs pt-2">
+                <div class="bg-white border-t-2 border-brand-orange border-x border-slate-200 text-slate-800 font-bold px-4 py-2 rounded-t-md flex items-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-table-cells text-brand-orange"></i>
+                    熱銷/潛力品
+                </div>
+                <div class="bg-slate-100 text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-t-md font-medium border-t border-x border-transparent">
+                    品項調整建議
+                </div>
+                <div class="bg-slate-100 text-slate-600 hover:bg-slate-200 px-4 py-2 rounded-t-md font-medium border-t border-x border-transparent">
+                    Input_本月新品
+                </div>
+            </div>
+
+            <!-- 報表內容展演區 -->
             <div class="p-6 md:p-8 space-y-8 bg-white">
-                
-                <!-- 模組 1 -->
+
+                <!-- 區塊 A: 品牌診斷與 Top 10 排名 (去敏感化) -->
                 <div>
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded border border-brand-orange/20">Module 01</span>
-                        <h4 class="text-lg font-bold text-slate-800">品牌潛力診斷與健康度健檢</h4>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-orange"></span>
+                            <h4 class="text-base font-bold text-slate-800">Top 10 品牌 GMV 診斷與品牌 Top 30 售賣區 (依 L3M 排序)</h4>
+                        </div>
+                        <span class="text-xs text-warm-subtext">選擇品牌：<strong class="text-slate-800">Brand A (餐飲旗艦)</strong></span>
                     </div>
-                    <p class="text-xs md:text-sm text-warm-subtext mb-5">整合 L3M 營收、YTD 總額與 MoM 成長率，自動歸類品牌標籤與 BCG 品項矩陣：</p>
-                    
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        <div class="p-3 bg-warm-bg border border-warm-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-slate-700">✨ 全新品牌</span>
-                            <div class="text-[10px] text-warm-subtext mt-1">創始期成長監控</div>
-                        </div>
-                        <div class="p-3 bg-warm-bg border border-warm-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-brand-orange">🌟 高潛力品牌</span>
-                            <div class="text-[10px] text-warm-subtext mt-1">重點資源挹注</div>
-                        </div>
-                        <div class="p-3 bg-warm-bg border border-warm-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-red-500">⚠️ 警訊衰退</span>
-                            <div class="text-[10px] text-warm-subtext mt-1">需補品/活動急救</div>
-                        </div>
-                        <div class="p-3 bg-warm-bg border border-warm-border rounded-lg text-center">
-                            <span class="text-xs md:text-sm font-semibold text-sky-600">🔵 穩定發展</span>
-                            <div class="text-[10px] text-warm-subtext mt-1">維持既有營運</div>
-                        </div>
+
+                    <!-- 模擬 Table 數據表 -->
+                    <div class="overflow-x-auto border border-slate-200 rounded-lg">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold">
+                                <tr>
+                                    <th class="p-2.5 border-r border-slate-200 text-center">L3M 排名</th>
+                                    <th class="p-2.5 border-r border-slate-200">品項名稱 (Brand A)</th>
+                                    <th class="p-2.5 border-r border-slate-200 text-right">近3月 GMV</th>
+                                    <th class="p-2.5 border-r border-slate-200 text-right">YTD 累計 GMV</th>
+                                    <th class="p-2.5 text-right">當月 GMV (MTD)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 text-slate-700 font-mono">
+                                <tr class="hover:bg-warm-accent/40">
+                                    <td class="p-2.5 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
+                                    <td class="p-2.5 border-r border-slate-200 font-sans font-medium">明星超值雙人套餐 兌換券</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right">$120,000</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right">$300,000</td>
+                                    <td class="p-2.5 text-right text-emerald-600">$18,000</td>
+                                </tr>
+                                <tr class="hover:bg-warm-accent/40">
+                                    <td class="p-2.5 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
+                                    <td class="p-2.5 border-r border-slate-200 font-sans font-medium">經典招牌單人套餐 兌換券</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right">$80,000</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right">$190,000</td>
+                                    <td class="p-2.5 text-right text-emerald-600">$20,000</td>
+                                </tr>
+                                <tr class="hover:bg-warm-accent/40">
+                                    <td class="p-2.5 border-r border-slate-200 text-center font-bold text-brand-orange">#3</td>
+                                    <td class="p-2.5 border-r border-slate-200 font-sans font-medium">人氣特色主餐 兌換券</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right">$75,000</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right">$185,000</td>
+                                    <td class="p-2.5 text-right text-emerald-600">$13,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
                 <hr class="border-warm-border">
 
-                <!-- 模組 2 (去除深色，改為極淡綠卡片) -->
+                <!-- 區塊 B: 品項調整建議與 1.5x 補品缺口演算 (去敏感化) -->
                 <div>
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="text-xs font-bold text-brand-emerald bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">Module 02</span>
-                        <h4 class="text-lg font-bold text-slate-800">補品診斷與業務動態建議文案</h4>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-emerald"></span>
+                        <h4 class="text-base font-bold text-slate-800">🔍 建議加入品項與 1.5x 缺口精算 (Brand B 範例)</h4>
                     </div>
-                    <p class="text-xs md:text-sm text-warm-subtext mb-4">自動判讀商品歷史銷量與活動峰值，並直接產出可供業務溝通的說服文案：</p>
 
-                    <div class="bg-emerald-50/60 border border-emerald-200/80 p-4 rounded-lg font-mono text-xs text-slate-700">
-                        <div class="text-emerald-700/70 mb-2 font-semibold">// 系統即時動態文案產出範例</div>
-                        <div class="text-emerald-800 font-medium leading-relaxed">▶ [建議納入] 該品項為全歷史銷量第一爆款，今年最高單月 GMV 達 $450,000，強烈建議納入本次 CFS 主推活動！</div>
+                    <!-- 補品指標小卡片 -->
+                    <div class="grid grid-cols-3 gap-3 mb-4">
+                        <div class="p-3 bg-warm-accent rounded-lg border border-warm-border text-center">
+                            <div class="text-[11px] text-warm-subtext font-medium">當月已提報熱銷</div>
+                            <div class="text-lg font-bold text-slate-800">7 品項</div>
+                        </div>
+                        <div class="p-3 bg-warm-accent rounded-lg border border-warm-border text-center">
+                            <div class="text-[11px] text-warm-subtext font-medium">CFS 建議至少提報</div>
+                            <div class="text-lg font-bold text-brand-orange">24 品項</div>
+                        </div>
+                        <div class="p-3 bg-warm-accent rounded-lg border border-warm-border text-center">
+                            <div class="text-[11px] text-warm-subtext font-medium">需增加品項數</div>
+                            <div class="text-lg font-bold text-red-500">17 品項</div>
+                        </div>
+                    </div>
+
+                    <!-- 建議加入品項 Table -->
+                    <div class="overflow-x-auto border border-slate-200 rounded-lg">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold">
+                                <tr>
+                                    <th class="p-2.5 border-r border-slate-200">品項名稱</th>
+                                    <th class="p-2.5 border-r border-slate-200 text-center">近3月歷史排名</th>
+                                    <th class="p-2.5 border-r border-slate-200 text-right">近3月 GMV</th>
+                                    <th class="p-2.5 border-r border-slate-200 text-center">當月新品同類?</th>
+                                    <th class="p-2.5 border-r border-slate-200 text-center">建檔層級</th>
+                                    <th class="p-2.5">原因與建議</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 text-slate-700">
+                                <tr class="hover:bg-warm-accent/40">
+                                    <td class="p-2.5 border-r border-slate-200 font-medium">Brand B 經典主力品項 #01</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center font-mono">#1</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right font-mono">$80,000</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center text-slate-500">否</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center">
+                                        <span class="px-2 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
+                                    </td>
+                                    <td class="p-2.5 text-xs text-slate-600">全歷史/L3M 單品銷量冠軍品項</td>
+                                </tr>
+                                <tr class="hover:bg-warm-accent/40">
+                                    <td class="p-2.5 border-r border-slate-200 font-medium">Brand B 招牌必點品項 #02</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center font-mono">#2</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right font-mono">$60,000</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center text-slate-500">否</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center">
+                                        <span class="px-2 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
+                                    </td>
+                                    <td class="p-2.5 text-xs text-slate-600">銷量名列前茅，歷史熱銷品項</td>
+                                </tr>
+                                <tr class="hover:bg-warm-accent/40">
+                                    <td class="p-2.5 border-r border-slate-200 font-medium">Brand B 熱門人氣品項 #04</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center font-mono">#4</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-right font-mono">$45,000</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center text-slate-500">否</td>
+                                    <td class="p-2.5 border-r border-slate-200 text-center">
+                                        <span class="px-2 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
+                                    </td>
+                                    <td class="p-2.5 text-xs text-slate-600">歷史爆款 (排名往前)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
@@ -244,5 +371,28 @@
         <p>CFS Analytics & Business Intelligence System Architecture</p>
     </footer>
 
+    <!-- JS 切換邏輯 -->
+    <script>
+        function switchModule(mod) {
+            const btn1 = document.getElementById('btn-mod1');
+            const btn2 = document.getElementById('btn-mod2');
+            const content1 = document.getElementById('content-mod1');
+            const content2 = document.getElementById('content-mod2');
+
+            if (mod === 'mod1') {
+                content1.classList.remove('hidden');
+                content2.classList.add('hidden');
+
+                btn1.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-orange shadow-sm border border-warm-border";
+                btn2.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800";
+            } else {
+                content1.classList.add('hidden');
+                content2.classList.remove('hidden');
+
+                btn2.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-emerald shadow-sm border border-warm-border";
+                btn1.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800";
+            }
+        }
+    </script>
 </body>
 </html>
