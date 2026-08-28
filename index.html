@@ -68,7 +68,7 @@
                 擺脫人工 Excel 盲目篩選！整合 Python 自動化診斷、RapidFuzz 智慧去重與 1.5x 缺口演算，自動精準補足熱銷品項。
             </p>
 
-            <!-- 核心指標數據卡片 (改為示範與變數數據) -->
+            <!-- 核心指標數據卡片 -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
                 <div class="p-5 bg-white rounded-xl border border-warm-border shadow-sm text-center hover:border-brand-orange/40 hover:shadow-md transition">
                     <div class="text-3xl font-black text-brand-orange">100%</div>
@@ -136,6 +136,59 @@
         </div>
     </section>
 
+    <!-- 📍 新增：3 步驟快速導入 (Quick Onboarding Steps) -->
+    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border">
+        <div class="text-center mb-12">
+            <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Quick Onboarding</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">簡單 3 步驟，快速導入智慧選品</h3>
+            <p class="text-xs text-warm-subtext mt-2">只需幾分鐘，即可完成自動化診斷與決策清單產出</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 relative">
+            <!-- Step 1 -->
+            <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">
+                        01
+                    </span>
+                    <i class="fa-solid fa-file-import text-slate-300 text-xl"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800 mb-2">匯入歷史數據與提報表</h4>
+                <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
+                    載入品牌歷史 Sales 數據與當月廠商提報之品項清單（支援標準 Excel / Google Sheets）。
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">
+                        02
+                    </span>
+                    <i class="fa-solid fa-gears text-slate-300 text-xl"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800 mb-2">核心 Python 引擎自動運算</h4>
+                <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
+                    系統一鍵執行「健康度分類」、「1.5x 缺口演算」與「RapidFuzz 文字去重」多重檢驗。
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">
+                        03
+                    </span>
+                    <i class="fa-solid fa-file-circle-check text-slate-300 text-xl"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800 mb-2">產出可決策之品牌診斷表</h4>
+                <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
+                    自動生成含精準建議階層、缺口數量與招商說服文案的完整選品決策報表。
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- 3. 雙核心演算法動態解析與試算表展演 -->
     <section class="max-w-5xl mx-auto py-16 px-6">
         <div class="text-center mb-8">
@@ -156,7 +209,7 @@
             </div>
         </div>
 
-        <!-- 模擬 Dashboard 容器 (已移除頂部綠色條) -->
+        <!-- 模擬 Dashboard 容器 -->
         <div class="bg-white border border-warm-border rounded-xl overflow-hidden shadow-lg transition-all">
 
             <!-- 頁籤 Tab Bar -->
@@ -201,7 +254,7 @@
                         </div>
                     </div>
 
-                    <!-- 模組 01 表格 (使用變數/遮蔽數據) -->
+                    <!-- 模組 01 表格 -->
                     <div>
                         <div class="flex items-center justify-between mb-3">
                             <h5 class="text-xs md:text-sm font-bold text-slate-800 flex items-center gap-2">
@@ -261,7 +314,7 @@
                             自動比對熱銷缺口，並自動透過 RapidFuzz 比對同款去重，最後帶出招商說服文案：
                         </p>
                         
-                        <!-- 文案產出動態範本 (完全比對參考圖的表達樣態) -->
+                        <!-- 文案產出動態範本 -->
                         <div class="bg-white border border-amber-200/80 p-3 rounded font-mono text-xs text-slate-700">
                             <span class="text-amber-700 font-bold">// 動態文案產生器範例邏輯：</span>
                             <span class="text-slate-800 font-medium ml-1">▶ [建議狀態] 該品項為 [歷史/近期 銷量表現標籤]，最高單月 GMV 表現優異，強烈建議納入本次主推！</span>
@@ -270,7 +323,7 @@
 
                     <!-- 對應的診斷展演卡片與數據 -->
                     <div>
-                        <!-- 補品指標卡片 (完全比對參考圖的 N / 1.5x N / Δ 缺口數量) -->
+                        <!-- 補品指標卡片 -->
                         <div class="grid grid-cols-3 gap-4 mb-5">
                             <div class="p-4 bg-amber-50/30 rounded-xl border border-warm-border text-center">
                                 <div class="text-xs text-warm-subtext font-medium mb-1">當月已提報熱銷</div>
@@ -286,7 +339,7 @@
                             </div>
                         </div>
 
-                        <!-- 建議加入品項 Table (採用參考圖的遮蔽數據呈現方式) -->
+                        <!-- 建議加入品項 Table -->
                         <div class="overflow-x-auto border border-slate-200 rounded-lg">
                             <table class="w-full text-left text-xs">
                                 <thead class="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold">
