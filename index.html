@@ -55,7 +55,7 @@
             </div>
             
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 tracking-tight mb-5 leading-tight">
-                DP CFS 選品/排檔系統
+                DP CFS 選品系統
             </h1>
             
             <p class="text-sm md:text-base text-warm-subtext max-w-2xl mx-auto leading-relaxed">
@@ -195,12 +195,21 @@
                 <!-- 模組 01 展示內容 -->
                 <div id="content-mod1" class="space-y-6">
                     
-                    <!-- 頂部橘色邏輯區塊 -->
+                    <!-- 頂部橘色邏輯區塊 + 精簡後的統計提示 Badge -->
                     <div class="bg-amber-50/40 border border-amber-200/80 rounded-xl p-5">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold text-brand-orange bg-amber-100/80 px-2.5 py-0.5 rounded border border-amber-200">Module 01 邏輯</span>
-                            <h4 class="text-sm md:text-base font-bold text-slate-800">商品 (SKU) 四象限矩陣分類</h4>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs font-bold text-brand-orange bg-amber-100/80 px-2.5 py-0.5 rounded border border-amber-200">Module 01 邏輯</span>
+                                <h4 class="text-sm md:text-base font-bold text-slate-800">商品 (SKU) 四象限矩陣分類</h4>
+                            </div>
+                            <!-- 融入原「近三個月合計統計」數據 -->
+                            <div class="inline-flex items-center gap-2 text-xs bg-white border border-amber-200/80 px-3 py-1 rounded-full text-slate-700 shadow-sm font-mono self-start sm:self-auto">
+                                <span>近 3 月全站熱銷平均：<strong class="text-brand-orange font-bold">約 XX 品</strong></span>
+                                <span class="text-slate-300">|</span>
+                                <span class="text-slate-500">建議：維持優化</span>
+                            </div>
                         </div>
+                        
                         <p class="text-xs text-warm-subtext leading-relaxed mb-4">
                             依據銷量排名 Top 25% 與 75% 累積 GMV 貢獻度進行雙軸交叉分析。一句話總結：透過銷量與營收雙指標，自動將商品分類為四大類型，精準掌握爆款與長尾商品。
                         </p>
@@ -226,44 +235,16 @@
                         </div>
                     </div>
 
-                    <!-- 頂部品牌選擇與統計看板 -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div class="bg-amber-50/30 border border-amber-200/60 p-4 rounded-xl flex flex-col justify-between">
-                            <span class="text-xs font-bold text-amber-800 mb-1">近三個月合計統計</span>
-                            <div class="text-xs text-slate-600 font-mono space-y-1">
-                                <div>以 202X-06 ~ 08 近 3 個月統計：</div>
-                                <div class="text-slate-800 font-bold flex items-center gap-1">
-                                    <span>💥 熱銷平均：</span>
-                                    <span class="text-brand-orange">約 XX 品</span>
-                                </div>
-                                <div class="text-slate-800 font-bold flex items-center gap-1">
-                                    <span>💡 建議：</span>
-                                    <span class="text-slate-600">維持優化</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl md:col-span-2 flex items-center justify-between">
-                            <div>
-                                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">請選擇品牌</span>
-                                <div class="text-base font-extrabold text-slate-800 flex items-center gap-2">
-                                    <i class="fa-solid fa-store text-brand-orange"></i> Brand A
-                                </div>
-                            </div>
-                            <div class="text-right text-xs font-mono text-slate-500">
-                                <div>近3月 GMV: <strong class="text-slate-800">$X,XXX,XXX</strong></div>
-                                <div>YTD 累計: <strong class="text-slate-800">$X,XXX,XXX</strong></div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- 雙欄結構 ( Top 10 品牌 5/12 + 品牌 Top 30 7/12) -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start pt-2">
                         
                         <!-- 左側：Top 10 品牌 (依 L3M 排序) (5/12) -->
                         <div class="lg:col-span-5 space-y-3">
-                            <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5 border-b pb-2 border-slate-200">
-                                <i class="fa-solid fa-trophy text-amber-500"></i> Top 10 品牌 (依 L3M 排序)
+                            <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
+                                <span class="flex items-center gap-1.5">
+                                    <i class="fa-solid fa-trophy text-amber-500"></i> Top 10 品牌 (依 L3M 排序)
+                                </span>
+                                <span class="text-[11px] text-warm-subtext font-normal">點擊切換品牌</span>
                             </h5>
                             <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
                                 <table class="w-full text-left text-xs font-mono">
