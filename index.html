@@ -257,39 +257,11 @@
                         </div>
                     </div>
 
-                    <!-- 三欄式結構 (各月矩陣 / Top 10 品牌 / 品牌 Top 30) -->
+                    <!-- 雙欄結構 ( Top 10 品牌 5/12 + 品牌 Top 30 7/12) -->
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                         
-                        <!-- 左側：各月熱銷與潛力品矩陣分析 (4/12) -->
-                        <div class="lg:col-span-4 space-y-3">
-                            <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5 border-b pb-2 border-slate-200">
-                                <i class="fa-solid fa-calendar-days text-brand-orange"></i> 各月熱銷與潛力品矩陣分析
-                            </h5>
-                            <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
-                                <table class="w-full text-left text-xs font-mono">
-                                    <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
-                                        <tr>
-                                            <th class="p-2 border-r border-slate-200 text-center">月份</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">總品項數</th>
-                                            <th class="p-2 text-right text-brand-orange">熱銷品</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-01</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-02</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-03</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-04</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
-                                        <tr class="bg-amber-50/40"><td class="p-1.5 border-r border-slate-200 text-center font-bold">202X-05</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold text-brand-orange">XX</td></tr>
-                                        <tr class="bg-amber-50/40"><td class="p-1.5 border-r border-slate-200 text-center font-bold">202X-06</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold text-brand-orange">XX</td></tr>
-                                        <tr class="bg-amber-50/40"><td class="p-1.5 border-r border-slate-200 text-center font-bold">202X-07</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold text-brand-orange">XX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">202X-08</td><td class="p-1.5 border-r border-slate-200 text-right">XXX</td><td class="p-1.5 text-right font-bold">XX</td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <!-- 中間：Top 10 品牌 (依 L3M 排序) (3/12) -->
-                        <div class="lg:col-span-3 space-y-3">
+                        <!-- 左側：Top 10 品牌 (依 L3M 排序) (5/12) -->
+                        <div class="lg:col-span-5 space-y-3">
                             <h5 class="text-xs font-bold text-slate-800 flex items-center gap-1.5 border-b pb-2 border-slate-200">
                                 <i class="fa-solid fa-trophy text-amber-500"></i> Top 10 品牌 (依 L3M 排序)
                             </h5>
@@ -297,79 +269,79 @@
                                 <table class="w-full text-left text-xs font-mono">
                                     <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
                                         <tr>
-                                            <th class="p-2 border-r border-slate-200 text-center">排名</th>
-                                            <th class="p-2 border-r border-slate-200">品牌名稱</th>
-                                            <th class="p-2 text-right">近3月GMV</th>
+                                            <th class="p-2.5 border-r border-slate-200 text-center">排名</th>
+                                            <th class="p-2.5 border-r border-slate-200">品牌名稱</th>
+                                            <th class="p-2.5 text-right">近3月GMV</th>
                                         </tr>
                                     </thead>
                                     <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
-                                        <tr class="bg-orange-50/60 font-bold"><td class="p-1.5 border-r border-slate-200 text-center text-brand-orange">#1</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand A</td><td class="p-1.5 text-right">$X,XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#2</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand B</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#3</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand C</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#4</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand D</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#5</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand E</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#6</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand F</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#7</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand G</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
-                                        <tr><td class="p-1.5 border-r border-slate-200 text-center">#8</td><td class="p-1.5 border-r border-slate-200 font-sans">Brand H</td><td class="p-1.5 text-right">$XXX,XXX</td></tr>
+                                        <tr class="bg-orange-50/60 font-bold cursor-pointer"><td class="p-2 border-r border-slate-200 text-center text-brand-orange">#1</td><td class="p-2 border-r border-slate-200 font-sans">Brand A</td><td class="p-2 text-right">$X,XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#2</td><td class="p-2 border-r border-slate-200 font-sans">Brand B</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#3</td><td class="p-2 border-r border-slate-200 font-sans">Brand C</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#4</td><td class="p-2 border-r border-slate-200 font-sans">Brand D</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#5</td><td class="p-2 border-r border-slate-200 font-sans">Brand E</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#6</td><td class="p-2 border-r border-slate-200 font-sans">Brand F</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#7</td><td class="p-2 border-r border-slate-200 font-sans">Brand G</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#8</td><td class="p-2 border-r border-slate-200 font-sans">Brand H</td><td class="p-2 text-right">$XXX,XXX</td></tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
 
-                        <!-- 右側：品牌 Top 30 售賣區 (依 L3M 排序) (5/12) -->
-                        <div class="lg:col-span-5 space-y-3">
+                        <!-- 右側：品牌 Top 30 售賣區 (依 L3M 排序) (7/12) -->
+                        <div class="lg:col-span-7 space-y-3">
                             <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
                                 <span class="flex items-center gap-1.5">
                                     <i class="fa-solid fa-list-ol text-sky-600"></i> 品牌 Top 30 售賣區 (依 L3M 排序)
                                 </span>
-                                <span class="text-[11px] text-warm-subtext font-mono">Brand A</span>
+                                <span class="text-[11px] text-warm-subtext font-mono bg-slate-100 px-2 py-0.5 rounded border border-slate-200">Brand A</span>
                             </h5>
                             <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
                                 <table class="w-full text-left text-xs font-mono">
                                     <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
                                         <tr>
-                                            <th class="p-2 border-r border-slate-200">品項名稱</th>
-                                            <th class="p-2 border-r border-slate-200 text-center">L3M 排名</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">近3月 GMV</th>
-                                            <th class="p-2 text-right">當月 GMV (MTD)</th>
+                                            <th class="p-2.5 border-r border-slate-200">品項名稱</th>
+                                            <th class="p-2.5 border-r border-slate-200 text-center">L3M 排名</th>
+                                            <th class="p-2.5 border-r border-slate-200 text-right">近3月 GMV</th>
+                                            <th class="p-2.5 text-right">當月 GMV (MTD)</th>
                                         </tr>
                                     </thead>
                                     <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 歷史明星餐券套餐 #01</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-right">$XXX,XXX</td>
-                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Brand A 歷史明星餐券套餐 #01</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XXX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 經典超值組合 #02</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Brand A 經典超值組合 #02</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 人氣精選主餐 #03</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-brand-orange">#3</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Brand A 人氣精選主餐 #03</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#3</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 熱門雙人分享餐 #04</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold">#4</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Brand A 熱門雙人分享餐 #04</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#4</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px]">Brand A 招牌特惠組 #05</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold">#5</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                            <td class="p-1.5 text-right text-emerald-600">$XX,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Brand A 招牌特惠組 #05</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#5</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50 bg-blue-50/30">
-                                            <td class="p-1.5 border-r border-slate-200 font-sans truncate max-w-[150px] font-semibold text-blue-900">Brand A 季節限定活動新品 #14</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-center font-bold text-sky-600">#14</td>
-                                            <td class="p-1.5 border-r border-slate-200 text-right">$XX,XXX</td>
-                                            <td class="p-1.5 text-right text-slate-400">$0</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px] font-semibold text-blue-900">Brand A 季節限定活動新品 #14</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-sky-600">#14</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-slate-400">$0</td>
                                         </tr>
                                     </tbody>
                                 </table>
