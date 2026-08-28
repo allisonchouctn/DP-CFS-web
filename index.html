@@ -317,41 +317,38 @@
                 </div>
 
                 <!-- 模組 02 展示內容：完整包覆區塊一、區塊二、區塊三 -->
-                <div id="content-mod2" class="space-y-8 hidden">
+                <div id="content-mod2" class="space-y-6 hidden">
                     
-                    <!-- 🔝 區塊一：CFS 補品缺口計算（最上方核心告警區） -->
-                    <section class="bg-amber-50/60 border-2 border-brand-orange/30 rounded-2xl p-6 shadow-sm relative overflow-hidden">
-                        <div class="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
-                            Top Priority Alert
-                        </div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                    <!-- 🔝 區塊一：CFS 補品缺口計算（核心告警區 - 已縮小尺寸並移除右上 Alert 標籤） -->
+                    <section class="bg-amber-50/60 border border-brand-orange/30 rounded-xl p-4 shadow-sm relative overflow-hidden">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
                             <div>
-                                <h2 class="text-lg font-extrabold text-slate-900 flex items-center gap-2">
+                                <h2 class="text-base font-bold text-slate-900 flex items-center gap-2">
                                     <i class="fa-solid fa-triangle-exclamation text-brand-orange"></i>
                                     區塊一：CFS 補品缺口計算（核心告警區）
                                 </h2>
-                                <p class="text-xs text-warm-subtext mt-1">
+                                <p class="text-[11px] text-warm-subtext mt-0.5">
                                     當前評估品牌：<span class="font-bold text-slate-800">Brand A</span>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-3">
-                            <div class="p-4 bg-white rounded-xl border border-warm-border text-center shadow-sm">
-                                <div class="text-xs text-warm-subtext font-medium mb-1">當月已提報熱銷</div>
-                                <div class="text-2xl font-black text-slate-800 font-mono">N 品項</div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2.5">
+                            <div class="p-2.5 bg-white rounded-lg border border-warm-border text-center shadow-sm">
+                                <div class="text-[11px] text-warm-subtext font-medium mb-0.5">當月已提報熱銷</div>
+                                <div class="text-xl font-black text-slate-800 font-mono">N 品項</div>
                             </div>
-                            <div class="p-4 bg-white rounded-xl border border-warm-border text-center shadow-sm">
-                                <div class="text-xs text-warm-subtext font-medium mb-1">CFS 建議至少提報</div>
-                                <div class="text-2xl font-black text-brand-orange font-mono">1.5 x N 品項</div>
+                            <div class="p-2.5 bg-white rounded-lg border border-warm-border text-center shadow-sm">
+                                <div class="text-[11px] text-warm-subtext font-medium mb-0.5">CFS 建議至少提報</div>
+                                <div class="text-xl font-black text-brand-orange font-mono">1.5 x N 品項</div>
                             </div>
-                            <div class="p-4 bg-white rounded-xl border border-red-200 bg-red-50/30 text-center shadow-sm">
-                                <div class="text-xs text-red-600 font-medium mb-1">需增加品項數 (缺口)</div>
-                                <div class="text-2xl font-black text-red-600 font-mono">Δ 缺口數量</div>
+                            <div class="p-2.5 bg-white rounded-lg border border-red-200 bg-red-50/30 text-center shadow-sm">
+                                <div class="text-[11px] text-red-600 font-medium mb-0.5">需增加品項數 (缺口)</div>
+                                <div class="text-xl font-black text-red-600 font-mono">Δ 缺口數量</div>
                             </div>
                         </div>
 
-                        <div class="text-xs text-warm-subtext bg-white/80 border border-amber-200/60 p-2.5 rounded-lg flex items-center gap-2">
+                        <div class="text-[11px] text-warm-subtext bg-white/80 border border-amber-200/60 p-2 rounded-lg flex items-center gap-1.5">
                             <span class="text-amber-500 font-bold">💡 觸發機制：</span>
                             <span>自動比對歷史爆款量，當月提報不足 1.5x 標竿時自動觸發缺口告警。</span>
                         </div>
@@ -437,13 +434,13 @@
                             </div>
                         </div>
 
-                        <!-- 右側 (6/12)：🔥 📊 當月新品熱銷潛力 -->
+                        <!-- 右側 (6/12)：🔥 📊 當月新品熱銷潛力 (增加至 5 個範例) -->
                         <div class="lg:col-span-6 bg-white border border-warm-border rounded-xl shadow-sm p-4 flex flex-col h-full">
                             <div class="flex items-center justify-between border-b border-warm-border pb-3 mb-3">
                                 <h3 class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
                                     <i class="fa-solid fa-fire text-brand-orange"></i> 🔥 📊 當月新品熱銷潛力
                                 </h3>
-                                <span class="text-[11px] text-warm-subtext">當月新品評估表</span>
+                                <span class="text-[11px] text-warm-subtext">當月新品評估表 (共 5 項)</span>
                             </div>
                             <div class="overflow-x-auto border border-slate-200 rounded-lg flex-1">
                                 <table class="w-full text-left text-xs font-mono">
@@ -486,13 +483,31 @@
                                             <td class="p-2 border-r border-slate-200 text-center font-sans text-slate-500">🔘 一般</td>
                                             <td class="p-2 text-center font-sans font-bold text-amber-600">調整售價</td>
                                         </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[110px]">Item #04 (Value Pack)</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$120</td>
+                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">$180</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$X,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 text-right font-bold text-red-600">$XX,XXX</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-sans"><span class="text-brand-orange font-bold">♨️ 熱銷</span></td>
+                                            <td class="p-2 text-center font-sans font-bold text-emerald-600">保留</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[110px]">Item #05 (Mini Set)</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$35</td>
+                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">$45</td>
+                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">無</td>
+                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">$XXX</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-sans text-slate-400">⚪ 偏低</td>
+                                            <td class="p-2 text-center font-sans font-bold text-slate-400">建議替換</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </section>
 
-                    <!-- 🔍 區塊三：建議加入品項（最下方清單區） -->
+                    <!-- 🔍 區塊三：建議加入品項（最下方清單區 - 保留 3 個範例） -->
                     <section class="bg-white border border-warm-border rounded-xl shadow-sm p-6 space-y-4">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-warm-border pb-4">
                             <div>
@@ -553,28 +568,6 @@
                                             <span class="px-2.5 py-1 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
                                         </td>
                                         <td class="p-3 font-sans text-slate-600">歷史爆款 (排名提升顯著)...</td>
-                                    </tr>
-                                    <tr class="hover:bg-warm-accent/40">
-                                        <td class="p-3 border-r border-slate-200 font-bold font-sans">Brand A Item #11</td>
-                                        <td class="p-3 border-r border-slate-200 text-center">#11</td>
-                                        <td class="p-3 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-3 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-3 border-r border-slate-200 text-center font-sans text-slate-500">否</td>
-                                        <td class="p-3 border-r border-slate-200 text-center font-sans">
-                                            <span class="px-2.5 py-1 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
-                                        </td>
-                                        <td class="p-3 font-sans text-slate-600">歷史熱銷品項...</td>
-                                    </tr>
-                                    <tr class="hover:bg-warm-accent/40">
-                                        <td class="p-3 border-r border-slate-200 font-bold font-sans">Brand A Item #14</td>
-                                        <td class="p-3 border-r border-slate-200 text-center">#14</td>
-                                        <td class="p-3 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-3 border-r border-slate-200 text-right">$XX,XXX</td>
-                                        <td class="p-3 border-r border-slate-200 text-center font-sans text-slate-500">否</td>
-                                        <td class="p-3 border-r border-slate-200 text-center font-sans">
-                                            <span class="px-2.5 py-1 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
-                                        </td>
-                                        <td class="p-3 font-sans text-slate-600">歷史熱銷品項...</td>
                                     </tr>
                                 </tbody>
                             </table>
