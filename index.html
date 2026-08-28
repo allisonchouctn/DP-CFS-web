@@ -33,9 +33,10 @@
     </script>
 </head>
 <body class="bg-warm-bg text-warm-text font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen">
+
     <!-- 頂部導覽列 Navbar -->
     <nav class="border-b border-warm-border bg-white/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4 shadow-sm">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-brand-orange text-white font-bold flex items-center justify-center shadow-md shadow-brand-orange/20">
                     <i class="fa-solid fa-chart-line text-sm"></i>
@@ -64,11 +65,12 @@
     </header>
 
     <!-- 2. 解決方案 (Solutions & Benefits) -->
-    <section class="max-w-6xl mx-auto py-12 px-6 border-b border-warm-border">
-        <div class="text-center mb-10">
+    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border">
+        <div class="text-center mb-12">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Core Solutions</h2>
             <h3 class="text-2xl md:text-3xl font-bold text-slate-800">四大選品方向</h3>
         </div>
+
         <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-brand-orange/10 border border-brand-orange/20 text-brand-orange flex items-center justify-center mb-4 text-base">
@@ -79,6 +81,7 @@
                     自動比對歷史爆款量與當月已提報量，精算「建議至少提報」與「需增加品項數」。
                 </p>
             </div>
+
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-emerald-50 border border-emerald-200/60 text-brand-emerald flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-filter"></i>
@@ -88,6 +91,7 @@
                     辨識當前月份，精準過濾掉非當季錯置資源，確保檔期營收最大化。
                 </p>
             </div>
+
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-sky-50 border border-sky-200/60 text-sky-600 flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-font"></i>
@@ -97,6 +101,7 @@
                     利用文字模糊比對演算法，比對當月新品同類，自動排除同款異名重複提報之品項。
                 </p>
             </div>
+
             <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm hover:border-brand-orange/40 hover:shadow-md transition">
                 <div class="w-10 h-10 rounded-lg bg-amber-50 border border-amber-200/60 text-brand-amber flex items-center justify-center mb-4 text-base">
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -109,8 +114,52 @@
         </div>
     </section>
 
+    <!-- 3 步驟快速導入 -->
+    <section class="max-w-5xl mx-auto py-16 px-6 border-b border-warm-border">
+        <div class="text-center mb-12">
+            <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Quick Onboarding</h2>
+            <h3 class="text-2xl md:text-3xl font-bold text-slate-800">簡單 3 步驟，快速導入智慧選品</h3>
+            <p class="text-xs text-warm-subtext mt-2">只需幾分鐘，即可完成自動化診斷與建議清單產出</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 relative">
+            <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">01</span>
+                    <i class="fa-solid fa-file-import text-slate-300 text-xl"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800 mb-2">匯入歷史數據與提報表</h4>
+                <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
+                    載入歷史 DP CFS GMV 數據與當月廠商提報之品項清單（支援標準 Excel / Google Sheets）。
+                </p>
+            </div>
+
+            <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">02</span>
+                    <i class="fa-solid fa-gears text-slate-300 text-xl"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800 mb-2">核心 Python 引擎自動運算</h4>
+                <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
+                    系統一鍵執行「潛力數據分類」、「1.5x 缺口演算」與「文字去重」多重檢驗。
+                </p>
+            </div>
+
+            <div class="bg-white border border-warm-border p-6 rounded-xl shadow-sm relative hover:border-brand-orange/40 transition">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="w-9 h-9 rounded-full bg-brand-orange text-white font-black text-sm flex items-center justify-center shadow-md shadow-brand-orange/20">03</span>
+                    <i class="fa-solid fa-file-circle-check text-slate-300 text-xl"></i>
+                </div>
+                <h4 class="text-base font-bold text-slate-800 mb-2">產出調整/建議診斷表</h4>
+                <p class="text-xs md:text-sm text-warm-subtext leading-relaxed">
+                    自動生成含精準數據背景、缺口數量與調整方向文案的完整選品表。
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- 3. 雙核心演算法動態解析與試算表展演 -->
-    <section class="max-w-7xl mx-auto py-12 px-4 md:px-6">
+    <section class="max-w-6xl mx-auto py-16 px-6">
         <div class="text-center mb-8">
             <h2 class="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">Interactive Dashboard</h2>
             <h3 class="text-2xl md:text-3xl font-bold text-slate-800">雙核心演算法與方向調整</h3>
@@ -120,10 +169,10 @@
         <!-- 模組切換 Switcher 控制按鈕 -->
         <div class="flex justify-center mb-8">
             <div class="bg-warm-accent p-1.5 rounded-xl border border-warm-border flex gap-2">
-                <button id="btn-mod1" onclick="switchModule('mod1')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800">
+                <button id="btn-mod1" onclick="switchModule('mod1')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-orange shadow-sm border border-warm-border">
                     <i class="fa-solid fa-chart-pie"></i> 01: 品牌熱銷與潛力診斷
                 </button>
-                <button id="btn-mod2" onclick="switchModule('mod2')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-amber shadow-sm border border-warm-border">
+                <button id="btn-mod2" onclick="switchModule('mod2')" class="px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800">
                     <i class="fa-solid fa-calculator"></i> 02: 補品診斷與缺口演算
                 </button>
             </div>
@@ -134,9 +183,9 @@
 
             <!-- 頁籤 Tab Bar -->
             <div class="bg-[#f8fafc] border-b border-slate-200 px-4 flex items-center gap-1 text-xs pt-2">
-                <div id="tab-sheet-1" class="bg-white border-t-2 border-brand-amber border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm">
-                    <i id="tab-icon" class="fa-solid fa-calculator text-brand-amber"></i>
-                    <span id="tab-title">2026-08_品項調整建議 (Module 02)</span>
+                <div id="tab-sheet-1" class="bg-white border-t-2 border-brand-orange border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm">
+                    <i id="tab-icon" class="fa-solid fa-chart-pie text-brand-orange"></i>
+                    <span id="tab-title">01: 熱銷/潛力品</span>
                 </div>
             </div>
 
@@ -144,239 +193,136 @@
             <div class="p-4 md:p-6 bg-white">
 
                 <!-- 模組 01 展示內容 -->
-                <div id="content-mod1" class="space-y-6 hidden">
+                <div id="content-mod1" class="space-y-6">
+                    
+                    <!-- 頂部橘色邏輯區塊 + 精簡後的統計提示 Badge -->
                     <div class="bg-amber-50/40 border border-amber-200/80 rounded-xl p-5">
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
                             <div class="flex items-center gap-2">
                                 <span class="text-xs font-bold text-brand-orange bg-amber-100/80 px-2.5 py-0.5 rounded border border-amber-200">Module 01 邏輯</span>
                                 <h4 class="text-sm md:text-base font-bold text-slate-800">商品 (SKU) 四象限矩陣分類</h4>
                             </div>
-                            <div class="inline-flex items-center gap-2 text-xs bg-white border border-amber-200/80 px-3 py-1 rounded-full text-slate-700 shadow-sm font-mono">
-                                <span>近 3 月全站熱銷平均：<strong class="text-brand-orange font-bold">約 XX 品</strong></span>
+                            <!-- 融入原「近三個月合計統計」數據 -->
+                            <div class="inline-flex items-center gap-2 text-xs bg-white border border-amber-200/80 px-3 py-1 rounded-full text-slate-700 shadow-sm font-mono self-start sm:self-auto">
+                                <span>近 3 月熱銷品平均數量：<strong class="text-brand-orange font-bold">約 XX 品</strong></span>
+                                <span class="text-slate-300">|</span>
+                                <span class="text-slate-500">建議: xxx </span>
                             </div>
                         </div>
-                        <p class="text-xs text-warm-subtext leading-relaxed">
-                            依據銷量排名 Top 25% 與 75% 累積 GMV 貢獻度進行雙軸交叉分析。
+                        
+                        <p class="text-xs text-warm-subtext leading-relaxed mb-4">
+                            依據銷量排名 Top 25% 與 75% 累積 GMV 貢獻度進行雙軸交叉分析。一句話總結：透過銷量與營收雙指標，自動將商品分類為四大類型，精準掌握爆款與長尾商品。
                         </p>
-                    </div>
-                </div>
-
-                <!-- 模組 02 展示內容 (完美對齊圖片 2026-08_品項調整建議) -->
-                <div id="content-mod2" class="space-y-6">
-
-                    <!-- 上半部：補品缺口指標與建議加入品項 (對齊圖片頂部) -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                         
-                        <!-- 左上：補品缺口計算（H-K 欄） (4/12) -->
-                        <div class="lg:col-span-4 bg-amber-50/30 border border-amber-200/80 rounded-xl p-4 space-y-4">
-                            <div class="flex items-center justify-between border-b border-amber-200/80 pb-2">
-                                <span class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-calculator text-brand-amber"></i> CFS 補品缺口計算
-                                </span>
-                                <span class="text-[11px] font-mono font-bold text-brand-orange">選取品牌: 麥當勞</span>
+                        <!-- 四大分類標籤展示 -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">🌟 熱銷品 (Star)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">Top 25% 排名 ✕ 75% GMV 內</div>
                             </div>
-
-                            <div class="grid grid-cols-3 gap-2 text-center font-mono">
-                                <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-sm">
-                                    <div class="text-[10px] text-warm-subtext mb-1">當月已提報熱銷</div>
-                                    <div class="text-lg font-bold text-slate-800">1</div>
-                                </div>
-                                <div class="bg-white p-2.5 rounded-lg border border-slate-200 shadow-sm">
-                                    <div class="text-[10px] text-warm-subtext mb-1">CFS 建議至少提報</div>
-                                    <div class="text-lg font-bold text-brand-orange">17</div>
-                                </div>
-                                <div class="bg-white p-2.5 rounded-lg border border-amber-200 bg-amber-50/50 shadow-sm">
-                                    <div class="text-[10px] text-amber-700 font-bold mb-1">需增加品項數</div>
-                                    <div class="text-lg font-black text-red-600">16</div>
-                                </div>
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">🐔 長尾高頻品 (Volume)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">Top 25% 排名 ✕ 超過 75% GMV</div>
                             </div>
-                            <p class="text-[11px] text-warm-subtext leading-relaxed">
-                                💡 自動比對歷史爆款量，當月提報不足 1.5x 標竿時自動觸發缺口告警。
-                            </p>
-                        </div>
-
-                        <!-- 右上：建議加入品項表格（L-S 欄） (8/12) -->
-                        <div class="lg:col-span-8 space-y-2">
-                            <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
-                                <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-square-plus text-red-500"></i> 🔍 建議加入品項 (麥當勞補品清單)
-                                </span>
-                                <span class="text-[11px] text-warm-subtext font-mono">來源: 2026-08_品項調整建議</span>
-                            </h5>
-
-                            <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
-                                <table class="w-full text-left text-xs font-mono">
-                                    <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
-                                        <tr>
-                                            <th class="p-2 border-r border-slate-200">品項名稱</th>
-                                            <th class="p-2 border-r border-slate-200 text-center">近3月歷史排名</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">近3月 GMV</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">YTD 累計 GMV</th>
-                                            <th class="p-2 border-r border-slate-200 text-center">當月新品同類?</th>
-                                            <th class="p-2 border-r border-slate-200 text-center">建議層級</th>
-                                            <th class="p-2">原因與建議</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
-                                        <tr class="hover:bg-amber-50/40">
-                                            <td class="p-2 border-r border-slate-200 font-sans font-medium text-slate-900">麥當勞 麥香鷄+#01</td>
-                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$75,773</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$181,222</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-500">否</td>
-                                            <td class="p-2 border-r border-slate-200 text-center">
-                                                <span class="px-1.5 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[10px]">🔥 強烈建議</span>
-                                            </td>
-                                            <td class="p-2 text-[11px] font-sans truncate max-w-[150px]">全歷史/L3M單品...</td>
-                                        </tr>
-                                        <tr class="hover:bg-amber-50/40">
-                                            <td class="p-2 border-r border-slate-200 font-sans font-medium">麥當勞 豬肉滿福堡+#02</td>
-                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$54,158</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$54,158</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-500">否</td>
-                                            <td class="p-2 border-r border-slate-200 text-center">
-                                                <span class="px-1.5 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[10px]">🔥 強烈建議</span>
-                                            </td>
-                                            <td class="p-2 text-[11px] font-sans truncate max-w-[150px]">銷量名列前茅 (...</td>
-                                        </tr>
-                                        <tr class="hover:bg-amber-50/40">
-                                            <td class="p-2 border-r border-slate-200 font-sans font-medium">麥當勞 大麥克+#04</td>
-                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#4</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$43,198</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$88,233</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-500">否</td>
-                                            <td class="p-2 border-r border-slate-200 text-center">
-                                                <span class="px-1.5 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[10px]">🔥 強烈建議</span>
-                                            </td>
-                                            <td class="p-2 text-[11px] font-sans truncate max-w-[150px]">歷史爆款 (排名...</td>
-                                        </tr>
-                                        <tr class="hover:bg-amber-50/40">
-                                            <td class="p-2 border-r border-slate-200 font-sans font-medium">麥當勞 Oreo冰炫風#11</td>
-                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#11</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$36,135</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$36,135</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-500">否</td>
-                                            <td class="p-2 border-r border-slate-200 text-center">
-                                                <span class="px-1.5 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[10px]">🔥 強烈建議</span>
-                                            </td>
-                                            <td class="p-2 text-[11px] font-sans truncate max-w-[150px]">歷史熱銷品項 (...</td>
-                                        </tr>
-                                        <tr class="hover:bg-amber-50/40">
-                                            <td class="p-2 border-r border-slate-200 font-sans font-medium">麥當勞 蘋果派*2 #14</td>
-                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#14</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$33,885</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$86,886</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-500">否</td>
-                                            <td class="p-2 border-r border-slate-200 text-center">
-                                                <span class="px-1.5 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[10px]">🔥 強烈建議</span>
-                                            </td>
-                                            <td class="p-2 text-[11px] font-sans truncate max-w-[150px]">歷史熱銷品項 (...</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">🐴 高單價 (Value)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">非 Top 25% 排名 ✕ 75% GMV 內</div>
+                            </div>
+                            <div class="bg-white border border-amber-200/80 p-3 rounded-lg text-center shadow-sm">
+                                <div class="font-bold text-xs text-slate-800 mb-1">📦 一般品 (Others)</div>
+                                <div class="text-[11px] text-warm-subtext font-mono">非 Top 25% 排名 ✕ 超過 75% GMV</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 中間分隔線 -->
-                    <hr class="border-slate-200 my-4">
-
-                    <!-- 下半部 1：品牌營收現況 (A-F 欄) + 當月新品熱銷潛力 (A-F 欄中間區塊) -->
-                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                    <!-- 雙欄結構 ( Top 10 品牌 5/12 + 品牌 Top 30 7/12) -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start pt-2">
                         
-                        <!-- 左邊欄位：品牌營收現況 (5/12) -->
+                        <!-- 左側：Top 10 品牌 (依 L3M 排序) (5/12) -->
                         <div class="lg:col-span-5 space-y-3">
                             <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
                                 <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-shop text-amber-600"></i> 品牌營收現況
+                                    <i class="fa-solid fa-trophy text-amber-500"></i> Top 10 品牌 (依 L3M 排序)
                                 </span>
+                                <span class="text-[11px] text-warm-subtext font-normal">點擊切換品牌</span>
                             </h5>
                             <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
                                 <table class="w-full text-left text-xs font-mono">
                                     <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
                                         <tr>
-                                            <th class="p-2 border-r border-slate-200">品牌</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">月均 GMV</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">近3月 GMV</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">近3月 MoM</th>
-                                            <th class="p-2 text-center">活力分類</th>
+                                            <th class="p-2.5 border-r border-slate-200 text-center">排名</th>
+                                            <th class="p-2.5 border-r border-slate-200">品牌名稱</th>
+                                            <th class="p-2.5 text-right">GMV數據</th>
                                         </tr>
                                     </thead>
-                                    <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
-                                        <tr class="hover:bg-slate-50">
-                                            <td class="p-2 border-r border-slate-200 font-sans">CoCo都可</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$150,782</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$704,795</td>
-                                            <td class="p-2 border-r border-slate-200 text-right text-emerald-600 font-bold">0.1149</td>
-                                            <td class="p-2 text-center text-[11px] font-sans">🟢 穩定品牌</td>
-                                        </tr>
-                                        <tr class="bg-amber-50/60 font-bold">
-                                            <td class="p-2 border-r border-slate-200 font-sans text-brand-orange">麥當勞</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$286,016</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$826,305</td>
-                                            <td class="p-2 border-r border-slate-200 text-right text-red-500">-23.80%</td>
-                                            <td class="p-2 text-center text-[11px] font-sans text-amber-700">🔔 警訊衰退</td>
-                                        </tr>
-                                        <tr class="hover:bg-slate-50">
-                                            <td class="p-2 border-r border-slate-200 font-sans">肯德基</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$301,682</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$950,320</td>
-                                            <td class="p-2 border-r border-slate-200 text-right text-emerald-600 font-bold">0.201</td>
-                                            <td class="p-2 text-center text-[11px] font-sans">🔥 高活力</td>
-                                        </tr>
+                                    <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
+                                        <tr class="bg-orange-50/60 font-bold cursor-pointer"><td class="p-2 border-r border-slate-200 text-center text-brand-orange">#1</td><td class="p-2 border-r border-slate-200 font-sans">Brand A</td><td class="p-2 text-right">$X,XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#2</td><td class="p-2 border-r border-slate-200 font-sans">Brand B</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#3</td><td class="p-2 border-r border-slate-200 font-sans">Brand C</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#4</td><td class="p-2 border-r border-slate-200 font-sans">Brand D</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#5</td><td class="p-2 border-r border-slate-200 font-sans">Brand E</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#6</td><td class="p-2 border-r border-slate-200 font-sans">Brand F</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#7</td><td class="p-2 border-r border-slate-200 font-sans">Brand G</td><td class="p-2 text-right">$XXX,XXX</td></tr>
+                                        <tr class="hover:bg-slate-50 cursor-pointer"><td class="p-2 border-r border-slate-200 text-center">#8</td><td class="p-2 border-r border-slate-200 font-sans">Brand H</td><td class="p-2 text-right">$XXX,XXX</td></tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
 
-                        <!-- 右邊欄位：當月新品熱銷潛力 (7/12) -->
+                        <!-- 右側：品牌 Top 30 查詢區 (依 L3M 排序) (7/12) -->
                         <div class="lg:col-span-7 space-y-3">
                             <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
                                 <span class="flex items-center gap-1.5">
-                                    <i class="fa-solid fa-fire text-orange-500"></i> 📊 當月新品熱銷潛力
+                                    <i class="fa-solid fa-list-ol text-sky-600"></i> 品牌 Top 30 查詢區 (依 L3M 排序)
                                 </span>
+                                <span class="text-[11px] text-warm-subtext font-mono bg-slate-100 px-2 py-0.5 rounded border border-slate-200">Brand A</span>
                             </h5>
                             <div class="overflow-x-auto border border-slate-200 rounded-lg shadow-sm">
                                 <table class="w-full text-left text-xs font-mono">
                                     <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold">
                                         <tr>
-                                            <th class="p-2 border-r border-slate-200">品項名稱</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">售價</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">市價</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">去年同期 GMV</th>
-                                            <th class="p-2 border-r border-slate-200 text-right">今年最高 GMV</th>
-                                            <th class="p-2 border-r border-slate-200 text-center">潛力</th>
-                                            <th class="p-2 text-center">建議</th>
+                                            <th class="p-2.5 border-r border-slate-200">品項名稱</th>
+                                            <th class="p-2.5 border-r border-slate-200 text-center">L3M 排名</th>
+                                            <th class="p-2.5 border-r border-slate-200 text-right">GMV數據</th>
+                                            <th class="p-2.5 text-right">GMV數據</th>
                                         </tr>
                                     </thead>
-                                    <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">
+                                    <tbody class="divide-y divide-slate-200 text-slate-600 bg-white">
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[140px]">六塊麥克鷄塊+冰檸雪碧...</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$95</td>
-                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">$136</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$18,327</td>
-                                            <td class="p-2 border-r border-slate-200 text-right font-bold text-brand-orange">$27,132</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-amber-600 font-bold">🍵 熱銷</td>
-                                            <td class="p-2 text-center text-emerald-600 font-bold">保留</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Item #01</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#1</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XXX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[140px]">勁辣鷄腿堡+薯條(大)+...</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$156</td>
-                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">$202</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-400">無</td>
-                                            <td class="p-2 border-r border-slate-200 text-right font-bold text-brand-orange">$32,578</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-amber-600 font-bold">🍵 熱銷</td>
-                                            <td class="p-2 text-center text-emerald-600 font-bold">保留</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Item #02</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#2</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
                                         </tr>
                                         <tr class="hover:bg-slate-50">
-                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[140px]">薯+蛋捲冰淇淋好禮即享券</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$50</td>
-                                            <td class="p-2 border-r border-slate-200 text-right text-slate-400">$58</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-400">無</td>
-                                            <td class="p-2 border-r border-slate-200 text-right">$8,643</td>
-                                            <td class="p-2 border-r border-slate-200 text-center text-slate-600">☕ 一般</td>
-                                            <td class="p-2 text-center text-amber-600 font-bold">調整售價</td>
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Item #03</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-brand-orange">#3</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Item #04</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#4</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50">
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px]">Item #05</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold">#5</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-emerald-600 font-bold">$XX,XXX</td>
+                                        </tr>
+                                        <tr class="hover:bg-slate-50 bg-blue-50/30">
+                                            <td class="p-2 border-r border-slate-200 font-sans truncate max-w-[200px] font-semibold text-blue-900">Item #14</td>
+                                            <td class="p-2 border-r border-slate-200 text-center font-bold text-sky-600">#14</td>
+                                            <td class="p-2 border-r border-slate-200 text-right">$XX,XXX</td>
+                                            <td class="p-2 text-right text-slate-400">$0</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -384,51 +330,93 @@
                         </div>
 
                     </div>
+                </div>
 
-                    <!-- 下半部 2：各品項歷史紀錄分析 (依當月新品展開) -->
-                    <div class="space-y-3 pt-2">
-                        <h5 class="text-xs font-bold text-slate-800 flex items-center justify-between border-b pb-2 border-slate-200">
-                            <span class="flex items-center gap-1.5">
-                                <i class="fa-solid fa-clock-rotate-left text-sky-600"></i> 各品項歷史紀錄分析 (依當月新品展開)
-                            </span>
-                            <span class="text-[11px] text-warm-subtext font-mono">歷史軌跡 & 季節加成文案</span>
-                        </h5>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            
-                            <!-- 第 1 名明細卡片 -->
-                            <div class="bg-slate-50/70 border border-slate-200 p-3.5 rounded-lg space-y-2 text-xs">
-                                <div class="font-bold text-slate-800 flex justify-between items-center">
-                                    <span>🥇 第 1 名：六塊麥克鷄塊+冰檸雪碧奶茶 好禮即享券 ($95)</span>
-                                </div>
-                                <div class="bg-white p-2 rounded border border-slate-200 font-mono text-[11px] space-y-1">
-                                    <div class="flex justify-between text-slate-600"><span>2025-11</span><span>[508 件]</span><span class="font-bold text-slate-800">$48,335</span></div>
-                                    <div class="flex justify-between text-slate-600 bg-amber-50/50"><span>2026-03</span><span>[285 件]</span><span class="font-bold text-brand-orange">$27,132</span></div>
-                                    <div class="flex justify-between text-slate-600"><span>2025-08</span><span>[192 件]</span><span class="font-bold text-slate-800">$18,327</span></div>
-                                </div>
-                                <div class="text-[11px] text-slate-700 leading-relaxed font-sans bg-amber-50/50 p-2 rounded border border-amber-200/60">
-                                    <div class="font-bold text-brand-orange">📍 結論：六塊麥克鷄塊+冰檸雪碧奶茶 今年最高單月 GMV 達 $27,132，表現強勁！</div>
-                                    <div class="text-slate-600 mt-0.5">🌸 季節加成：夏季消費旺季，建議作為主打推廣。</div>
-                                </div>
-                            </div>
-
-                            <!-- 第 2 名明細卡片 -->
-                            <div class="bg-slate-50/70 border border-slate-200 p-3.5 rounded-lg space-y-2 text-xs">
-                                <div class="font-bold text-slate-800 flex justify-between items-center">
-                                    <span>🥈 第 2 名：勁辣鷄腿堡+薯條(大)+冰檸紅茶 好禮即享券 ($156)</span>
-                                </div>
-                                <div class="bg-white p-2 rounded border border-slate-200 font-mono text-[11px] space-y-1">
-                                    <div class="flex justify-between text-slate-600 bg-amber-50/50"><span>2026-08</span><span>[208 件]</span><span class="font-bold text-brand-orange">$32,578</span></div>
-                                </div>
-                                <div class="text-[11px] text-slate-700 leading-relaxed font-sans bg-amber-50/50 p-2 rounded border border-amber-200/60">
-                                    <div class="font-bold text-brand-orange">📍 結論：勁辣鷄腿堡套餐 今年最高單月 GMV 達 $32,578，表現強勁！</div>
-                                    <div class="text-slate-600 mt-0.5">🌸 季節加成：夏季消費旺季，建議作為主打推廣。</div>
-                                </div>
-                            </div>
-
+                <!-- 模組 02 展示內容 -->
+                <div id="content-mod2" class="space-y-6 hidden">
+                    <!-- 邏輯說明 -->
+                    <div class="bg-amber-50/40 border border-amber-200/80 rounded-xl p-5">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold text-brand-amber bg-amber-100 px-2.5 py-0.5 rounded border border-amber-200">Module 02 邏輯</span>
+                            <h4 class="text-sm md:text-base font-bold text-slate-800">1.5x 補品缺口演算與動態文案產生器</h4>
+                        </div>
+                        <p class="text-xs text-warm-subtext leading-relaxed mb-3">
+                            自動比對熱銷缺口，並自動透過 RapidFuzz 比對同款去重，最後帶出招商說服文案：
+                        </p>
+                        
+                        <!-- 文案產出動態範本 -->
+                        <div class="bg-white border border-amber-200/80 p-3 rounded font-mono text-xs text-slate-700">
+                            <span class="text-amber-700 font-bold">// 動態文案產生器範例邏輯：</span>
+                            <span class="text-slate-800 font-medium ml-1">▶ [建議狀態] 該品項為 [歷史/近期 銷量表現標籤]，最高單月 GMV 表現優異，強烈建議納入本次主推！</span>
                         </div>
                     </div>
 
+                    <!-- 對應的診斷展演卡片與數據 -->
+                    <div>
+                        <!-- 補品指標卡片 -->
+                        <div class="grid grid-cols-3 gap-4 mb-5">
+                            <div class="p-4 bg-amber-50/30 rounded-xl border border-warm-border text-center">
+                                <div class="text-xs text-warm-subtext font-medium mb-1">當月已提報熱銷</div>
+                                <div class="text-2xl font-black text-slate-800">N 品項</div>
+                            </div>
+                            <div class="p-4 bg-amber-50/30 rounded-xl border border-warm-border text-center">
+                                <div class="text-xs text-warm-subtext font-medium mb-1">CFS 建議至少提報</div>
+                                <div class="text-2xl font-black text-brand-orange">1.5 x N 品項</div>
+                            </div>
+                            <div class="p-4 bg-amber-50/30 rounded-xl border border-warm-border text-center">
+                                <div class="text-xs text-warm-subtext font-medium mb-1">需增加品項數</div>
+                                <div class="text-2xl font-black text-red-500">Δ 缺口數量</div>
+                            </div>
+                        </div>
+
+                        <!-- 建議加入品項 Table -->
+                        <div class="overflow-x-auto border border-slate-200 rounded-lg">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-slate-50 border-b border-slate-200 text-slate-600 font-semibold">
+                                    <tr>
+                                        <th class="p-2.5 border-r border-slate-200">品項名稱 (示範)</th>
+                                        <th class="p-2.5 border-r border-slate-200 text-center">近3月排名</th>
+                                        <th class="p-2.5 border-r border-slate-200 text-right">近3月 GMV</th>
+                                        <th class="p-2.5 border-r border-slate-200 text-center">當月新品同類?</th>
+                                        <th class="p-2.5 border-r border-slate-200 text-center">建議層級</th>
+                                        <th class="p-2.5">原因與建議範本</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200 text-slate-700">
+                                    <tr class="hover:bg-warm-accent/40">
+                                        <td class="p-2.5 border-r border-slate-200 font-medium">Brand B 歷史主力品項 #01</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center font-mono">#1</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-right font-mono">$XX,XXX</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center text-slate-500">否</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center">
+                                            <span class="px-2 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
+                                        </td>
+                                        <td class="p-2.5 text-xs text-slate-600 font-mono">[自動帶出：歷史單品銷量冠軍與指標說明]</td>
+                                    </tr>
+                                    <tr class="hover:bg-warm-accent/40">
+                                        <td class="p-2.5 border-r border-slate-200 font-medium">Brand B 歷史熱銷品項 #02</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center font-mono">#2</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-right font-mono">$XX,XXX</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center text-slate-500">否</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center">
+                                            <span class="px-2 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
+                                        </td>
+                                        <td class="p-2.5 text-xs text-slate-600 font-mono">[自動帶出：名列前茅與成長潛力說明]</td>
+                                    </tr>
+                                    <tr class="hover:bg-warm-accent/40">
+                                        <td class="p-2.5 border-r border-slate-200 font-medium">Brand B 潛力爆款品項 #04</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center font-mono">#4</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-right font-mono">$XX,XXX</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center text-slate-500">否</td>
+                                        <td class="p-2.5 border-r border-slate-200 text-center">
+                                            <span class="px-2 py-0.5 rounded bg-red-100 text-red-600 font-bold text-[11px]">🔥 強烈建議</span>
+                                        </td>
+                                        <td class="p-2.5 text-xs text-slate-600 font-mono">[自動帶出：排名提升與補品建議說明]</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -469,7 +457,7 @@
                 btn2.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 bg-white text-brand-amber shadow-sm border border-warm-border";
                 btn1.className = "px-5 py-2.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-2 text-warm-subtext hover:text-slate-800";
 
-                tabTitle.innerText = "2026-08_品項調整建議 (Module 02)";
+                tabTitle.innerText = "Module 02: 補品診斷與缺口演算";
                 tabIcon.className = "fa-solid fa-calculator text-brand-amber";
                 tabSheet.className = "bg-white border-t-2 border-brand-amber border-x border-slate-200 text-slate-800 font-bold px-4 py-2.5 rounded-t-md flex items-center gap-2 shadow-sm";
             }
