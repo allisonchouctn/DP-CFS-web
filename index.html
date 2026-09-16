@@ -14,17 +14,17 @@
                 extend: {
                     colors: {
                         warm: {
-                            bg: '#fdfbf7',       // 淡暖黃奶茶底色
-                            card: '#ffffff',     // 純白卡片
-                            accent: '#fcf8f2',   // 極淡暖蜜桃/暖黃卡片底色
-                            border: '#f0e6d8',   // 柔和暖色邊框
-                            text: '#2d3748',     // 柔和深色文字
-                            subtext: '#718096'   // 柔和灰字
+                            bg: '#f3eee6',       // 加深：柔和奶茶燕麥色（投影時能清晰與白色卡片分離）
+                            card: '#ffffff',     // 純白卡片（在加深背景下會非常醒目）
+                            accent: '#eae0d2',   // 加深：次要區域底色
+                            border: '#dcd0c0',   // 加深：線條更明確，防止投影時邊框消失
+                            text: '#1a202c',     // 加深：提升至接近墨黑，確保遠看文字清楚
+                            subtext: '#4a5568'   // 加深：副標題灰字加深
                         },
                         brand: {
-                            orange: '#f05a28',   // 質感珊瑚橘
-                            amber: '#d97706',    // 質感琥珀黃
-                            emerald: '#059669'   // 柔和綠
+                            orange: '#e04818',   // 略加深飽和度
+                            amber: '#c05621',
+                            emerald: '#047857'
                         }
                     }
                 }
@@ -34,13 +34,13 @@
 </head>
 <body class="bg-warm-bg text-warm-text font-sans antialiased selection:bg-brand-orange selection:text-white min-h-screen">
     <!-- 頂部導覽列 Navbar -->
-    <nav class="border-b border-warm-border bg-white/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4 shadow-sm">
+    <nav class="border-b border-warm-border bg-white/95 backdrop-blur-md sticky top-0 z-50 px-6 py-4 shadow-md">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-brand-orange text-white font-bold flex items-center justify-center shadow-md shadow-brand-orange/20">
+                <div class="w-8 h-8 rounded-lg bg-brand-orange text-white font-bold flex items-center justify-center shadow-md shadow-brand-orange/30">
                     <i class="fa-solid fa-chart-line text-sm"></i>
                 </div>
-                <span class="font-bold text-base md:text-lg text-slate-800 tracking-wide">CFS Analytics</span>
+                <span class="font-bold text-base md:text-lg text-warm-text tracking-wide">CFS Analytics</span>
             </div>
         </div>
     </nav>
